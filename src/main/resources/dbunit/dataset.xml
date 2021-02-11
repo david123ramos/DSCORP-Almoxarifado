@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+
+    <STAFF document="908.559.730-72" name="Giovanni" phone="81999999999" />
+    <STAFF document="496.523.920-22" name="David" phone="81988888888" />
+    <STAFF document="160.927.670-15" name="Heber" phone="81977777777" />
+    <STAFF document="392.389.890-87" name="Gean" phone="8195884999" />
+    <STAFF document="544.738.980-16" name="Arthur" phone="8193441125" />
+
+    <PRODUCT  name="Gabinete VGA" price="200.00" />
+    <PRODUCT  name="Monitor LG QLED" price="1799.90" />
+    <PRODUCT  name="Cadeira de escritório vectra" price="799.50" />
+    <PRODUCT  name="Mesa para computador preta" price="649.90" />
+    <PRODUCT  name="Mouse Multilaser" price="30.00" />
+
+    <LOG date="2021-02-02 12:20:36" amount="3" operation="ENTRADA" prd_id="1" staff_id="1"/>
+    <LOG date="2021-02-02 15:36:36" amount="1" operation="ENTRADA" prd_id="3" staff_id="3"/>
+    <LOG date="2021-02-04 10:50:08" amount="4" operation="SAIDA" prd_id="2" staff_id="4"/>
+    <LOG date="2021-02-02 13:10:13" amount="5" operation="SAIDA" prd_id="4" staff_id="5"/>
+    <LOG date="2021-02-03 08:43:26" amount="2" operation="ENTRADA" prd_id="5" staff_id="2"/>
+
+</dataset>
