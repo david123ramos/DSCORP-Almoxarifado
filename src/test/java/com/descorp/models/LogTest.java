@@ -105,11 +105,8 @@ public class LogTest {
 
     @Test
     public void testGetId() {
-      
         Log instance = em.find(Log.class, 4);
-      
-       assertTrue(4 == instance.getId());
-  
+        assertTrue(4 == instance.getId());
+
     }
-    
 }
