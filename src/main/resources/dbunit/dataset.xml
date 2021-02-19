@@ -70,7 +70,17 @@
     <LOJISTA name="Renner">
     <LOJISTA name="Big Bompreço">
 
-    <DISTRIBUIDOR_LOJ "id_distribuidor"="" "id_lojista"=""/>
+
+    <DISTRIBUIDOR_LOJ "id_distribuidor"="1" "id_lojista"="1"/>
+    <DISTRIBUIDOR_LOJ "id_distribuidor"="3" "id_lojista"="2"/>
+    <DISTRIBUIDOR_LOJ "id_distribuidor"="1" "id_lojista"="3"/>
+    <DISTRIBUIDOR_LOJ "id_distribuidor"="5" "id_lojista"="4"/>
+    <DISTRIBUIDOR_LOJ "id_distribuidor"="1" "id_lojista"="5"/>
+    <DISTRIBUIDOR_LOJ "id_distribuidor"="4" "id_lojista"="6"/>
+    <DISTRIBUIDOR_LOJ "id_distribuidor"="5" "id_lojista"="7"/>
+    <DISTRIBUIDOR_LOJ "id_distribuidor"="5" "id_lojista"="8"/>
+    <DISTRIBUIDOR_LOJ "id_distribuidor"="5" "id_lojista"="9"/>
+    <DISTRIBUIDOR_LOJ "id_distribuidor"="5" "id_lojista"="10"/>
 
     
     <DP_LOJISTA "id_lojista"="1" "id_departamento"="1"/>
@@ -97,11 +107,5 @@
     <DP_LOJISTA "id_lojista"="10" "id_departamento"="7"/>
     <DP_LOJISTA "id_lojista"="10" "id_departamento"="8"/>
     <DP_LOJISTA "id_lojista"="10" "id_departamento"="9"/>
-
-
-    <MAQUINETA nome="D200"/>
-    <MAQUINETA nome="C680"/>
-    <MAQUINETA nome="MOOVE"/>
-    
 
 </dataset>
