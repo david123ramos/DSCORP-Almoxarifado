@@ -19,44 +19,44 @@
     <DEPARTAMENTO  name="Eletrodomesticos"/>
 
 
-    <DP_DISTRIBUIDOR "id_distribuidor"="1" "id_departamento"="1"/>
-    <DP_DISTRIBUIDOR "id_distribuidor"="1" "id_departamento"="2"/>
-    <DP_DISTRIBUIDOR "id_distribuidor"="2" "id_departamento"="1"/>
-    <DP_DISTRIBUIDOR "id_distribuidor"="3" "id_departamento"="3"/>
-    <DP_DISTRIBUIDOR "id_distribuidor"="3" "id_departamento"="4"/>
-    <DP_DISTRIBUIDOR "id_distribuidor"="4" "id_departamento"="5"/>
-    <DP_DISTRIBUIDOR "id_distribuidor"="4" "id_departamento"="6"/>
-    <DP_DISTRIBUIDOR "id_distribuidor"="5" "id_departamento"="7"/>
-    <DP_DISTRIBUIDOR "id_distribuidor"="5" "id_departamento"="8"/>
-    <DP_DISTRIBUIDOR "id_distribuidor"="5" "id_departamento"="9"/>
+    <DP_DISTRIBUIDOR id_distribuidor="1" id_departamento="1"/>
+    <DP_DISTRIBUIDOR id_distribuidor="1" id_departamento="2"/>
+    <DP_DISTRIBUIDOR id_distribuidor="2" id_departamento="1"/>
+    <DP_DISTRIBUIDOR id_distribuidor="3" id_departamento="3"/>
+    <DP_DISTRIBUIDOR id_distribuidor="3" id_departamento="4"/>
+    <DP_DISTRIBUIDOR id_distribuidor="4" id_departamento="5"/>
+    <DP_DISTRIBUIDOR id_distribuidor="4" id_departamento="6"/>
+    <DP_DISTRIBUIDOR id_distribuidor="5" id_departamento="7"/>
+    <DP_DISTRIBUIDOR id_distribuidor="5" id_departamento="8"/>
+    <DP_DISTRIBUIDOR id_distribuidor="5" id_departamento="9"/>
 
 
-    <PRODUTO name="Sensor MAP" "id_departamento"="1"/>
-    <PRODUTO name="Bomba deoleo" "id_departamento"="1"/>
-    <PRODUTO name="Trator Agricola" "id_departamento"="2"/>
-    <PRODUTO name="Retroescavadeira" "id_departamento"="2"/>
-    <PRODUTO name="Macarrao" "id_departamento"="3"/>
-    <PRODUTO name="Arroz" "id_departamento"="3"/>
-    <PRODUTO name="Feijão" "id_departamento"="3"/>
-    <PRODUTO name="Carne" "id_departamento"="3"/>
-    <PRODUTO name="Agua" "id_departamento"="4"/>
-    <PRODUTO name="Cerveja" "id_departamento"="4"/>
-    <PRODUTO name="Refrigerante" "id_departamento"="4"/>
-    <PRODUTO name="Camisa" "id_departamento"="5"/>
-    <PRODUTO name="Vestido" "id_departamento"="5"/>
-    <PRODUTO name="Short" "id_departamento"="5"/>
-    <PRODUTO name="Bermuda" "id_departamento"="5"/>
-    <PRODUTO name="Calca" "id_departamento"="5"/>
-    <PRODUTO name="Sandalia" "id_departamento"="6"/>
-    <PRODUTO name="Sapato fechado" "id_departamento"="6"/>
-    <PRODUTO name="Salto alto" "id_departamento"="6"/>
-    <PRODUTO name="PC gamer" "id_departamento"="7"/>
-    <PRODUTO name="PC comum" "id_departamento"="7"/>
-    <PRODUTO name="Mesa com 4 cadeiras" "id_departamento"="8"/>
-    <PRODUTO name="Mesa para PC" "id_departamento"="8"/>
-    <PRODUTO name="Geladeira" "id_departamento"="10"/>
-    <PRODUTO name="Fogão" "id_departamento"="10"/>
-    <PRODUTO name="microondas" "id_departamento"="10"/>
+    <PRODUTO name="Sensor MAP" id_departamento="1"/>
+    <PRODUTO name="Bomba deoleo" id_departamento="1"/>
+    <PRODUTO name="Trator Agricola" id_departamento="2"/>
+    <PRODUTO name="Retroescavadeira" id_departamento="2"/>
+    <PRODUTO name="Macarrao" id_departamento="3"/>
+    <PRODUTO name="Arroz" id_departamento="3"/>
+    <PRODUTO name="Feijão" id_departamento="3"/>
+    <PRODUTO name="Carne" id_departamento="3"/>
+    <PRODUTO name="Agua" id_departamento="4"/>
+    <PRODUTO name="Cerveja" id_departamento="4"/>
+    <PRODUTO name="Refrigerante" id_departamento="4"/>
+    <PRODUTO name="Camisa" id_departamento="5"/>
+    <PRODUTO name="Vestido" id_departamento="5"/>
+    <PRODUTO name="Short" id_departamento="5"/>
+    <PRODUTO name="Bermuda" id_departamento="5"/>
+    <PRODUTO name="Calca" id_departamento="5"/>
+    <PRODUTO name="Sandalia" id_departamento="6"/>
+    <PRODUTO name="Sapato fechado" id_departamento="6"/>
+    <PRODUTO name="Salto alto" id_departamento="6"/>
+    <PRODUTO name="PC gamer" id_departamento="7"/>
+    <PRODUTO name="PC comum" id_departamento="7"/>
+    <PRODUTO name="Mesa com 4 cadeiras" id_departamento="8"/>
+    <PRODUTO name="Mesa para PC" id_departamento="8"/>
+    <PRODUTO name="Geladeira" id_departamento="10"/>
+    <PRODUTO name="Fogão" id_departamento="10"/>
+    <PRODUTO name="microondas" id_departamento="10"/>
 
 
     <LOJISTA name="Mercado Autocar">
@@ -71,41 +71,41 @@
     <LOJISTA name="Big Bompreço">
 
 
-    <DISTRIBUIDOR_LOJ "id_distribuidor"="1" "id_lojista"="1"/>
-    <DISTRIBUIDOR_LOJ "id_distribuidor"="3" "id_lojista"="2"/>
-    <DISTRIBUIDOR_LOJ "id_distribuidor"="1" "id_lojista"="3"/>
-    <DISTRIBUIDOR_LOJ "id_distribuidor"="5" "id_lojista"="4"/>
-    <DISTRIBUIDOR_LOJ "id_distribuidor"="1" "id_lojista"="5"/>
-    <DISTRIBUIDOR_LOJ "id_distribuidor"="4" "id_lojista"="6"/>
-    <DISTRIBUIDOR_LOJ "id_distribuidor"="5" "id_lojista"="7"/>
-    <DISTRIBUIDOR_LOJ "id_distribuidor"="5" "id_lojista"="8"/>
-    <DISTRIBUIDOR_LOJ "id_distribuidor"="5" "id_lojista"="9"/>
-    <DISTRIBUIDOR_LOJ "id_distribuidor"="5" "id_lojista"="10"/>
+    <DISTRIBUIDOR_LOJ id_distribuidor="1" id_lojista="1"/>
+    <DISTRIBUIDOR_LOJ id_distribuidor="3" id_lojista="2"/>
+    <DISTRIBUIDOR_LOJ id_distribuidor="1" id_lojista="3"/>
+    <DISTRIBUIDOR_LOJ id_distribuidor="5" id_lojista="4"/>
+    <DISTRIBUIDOR_LOJ id_distribuidor="1" id_lojista="5"/>
+    <DISTRIBUIDOR_LOJ id_distribuidor="4" id_lojista="6"/>
+    <DISTRIBUIDOR_LOJ id_distribuidor="5" id_lojista="7"/>
+    <DISTRIBUIDOR_LOJ id_distribuidor="5" id_lojista="8"/>
+    <DISTRIBUIDOR_LOJ id_distribuidor="5" id_lojista="9"/>
+    <DISTRIBUIDOR_LOJ id_distribuidor="5" id_lojista="10"/>
 
     
-    <DP_LOJISTA "id_lojista"="1" "id_departamento"="1"/>
-    <DP_LOJISTA "id_lojista"="2" "id_departamento"="4"/>
-    <DP_LOJISTA "id_lojista"="3" "id_departamento"="2"/>
-    <DP_LOJISTA "id_lojista"="4" "id_departamento"="7"/>
-    <DP_LOJISTA "id_lojista"="4" "id_departamento"="8"/>
-    <DP_LOJISTA "id_lojista"="4" "id_departamento"="9"/>
-    <DP_LOJISTA "id_lojista"="5" "id_departamento"="5"/>
-    <DP_LOJISTA "id_lojista"="5" "id_departamento"="6"/>
-    <DP_LOJISTA "id_lojista"="5" "id_departamento"="7"/>
-    <DP_LOJISTA "id_lojista"="5" "id_departamento"="8"/>
-    <DP_LOJISTA "id_lojista"="5" "id_departamento"="9"/>
-    <DP_LOJISTA "id_lojista"="6" "id_departamento"="8"/>
-    <DP_LOJISTA "id_lojista"="6" "id_departamento"="9"/>
-    <DP_LOJISTA "id_lojista"="7" "id_departamento"="7"/>
-    <DP_LOJISTA "id_lojista"="8" "id_departamento"="7"/>
-    <DP_LOJISTA "id_lojista"="9" "id_departamento"="5"/>
-    <DP_LOJISTA "id_lojista"="9" "id_departamento"="6"/>
-    <DP_LOJISTA "id_lojista"="10" "id_departamento"="3"/>
-    <DP_LOJISTA "id_lojista"="10" "id_departamento"="4"/>
-    <DP_LOJISTA "id_lojista"="10" "id_departamento"="5"/>
-    <DP_LOJISTA "id_lojista"="10" "id_departamento"="6"/>
-    <DP_LOJISTA "id_lojista"="10" "id_departamento"="7"/>
-    <DP_LOJISTA "id_lojista"="10" "id_departamento"="8"/>
-    <DP_LOJISTA "id_lojista"="10" "id_departamento"="9"/>
+    <DP_LOJISTA id_lojista="1" id_departamento="1"/>
+    <DP_LOJISTA id_lojista="2" id_departamento="4"/>
+    <DP_LOJISTA id_lojista="3" id_departamento="2"/>
+    <DP_LOJISTA id_lojista="4" id_departamento="7"/>
+    <DP_LOJISTA id_lojista="4" id_departamento="8"/>
+    <DP_LOJISTA id_lojista="4" id_departamento="9"/>
+    <DP_LOJISTA id_lojista="5" id_departamento="5"/>
+    <DP_LOJISTA id_lojista="5" id_departamento="6"/>
+    <DP_LOJISTA id_lojista="5" id_departamento="7"/>
+    <DP_LOJISTA id_lojista="5" id_departamento="8"/>
+    <DP_LOJISTA id_lojista="5" id_departamento="9"/>
+    <DP_LOJISTA id_lojista="6" id_departamento="8"/>
+    <DP_LOJISTA id_lojista="6" id_departamento="9"/>
+    <DP_LOJISTA id_lojista="7" id_departamento="7"/>
+    <DP_LOJISTA id_lojista="8" id_departamento="7"/>
+    <DP_LOJISTA id_lojista="9" id_departamento="5"/>
+    <DP_LOJISTA id_lojista="9" id_departamento="6"/>
+    <DP_LOJISTA id_lojista="10" id_departamento="3"/>
+    <DP_LOJISTA id_lojista="10" id_departamento="4"/>
+    <DP_LOJISTA id_lojista="10" id_departamento="5"/>
+    <DP_LOJISTA id_lojista="10" id_departamento="6"/>
+    <DP_LOJISTA id_lojista="10" id_departamento="7"/>
+    <DP_LOJISTA id_lojista="10" id_departamento="8"/>
+    <DP_LOJISTA id_lojista="10" id_departamento="9"/>
 
 </dataset>
