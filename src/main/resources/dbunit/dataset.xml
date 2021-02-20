@@ -19,16 +19,16 @@
     <DEPARTAMENTO  name="Eletrodomesticos"/>
 
 
-    <DP_DISTRIBUIDOR id_distribuidor="1" id_departamento="1"/>
-    <DP_DISTRIBUIDOR id_distribuidor="1" id_departamento="2"/>
-    <DP_DISTRIBUIDOR id_distribuidor="2" id_departamento="1"/>
-    <DP_DISTRIBUIDOR id_distribuidor="3" id_departamento="3"/>
-    <DP_DISTRIBUIDOR id_distribuidor="3" id_departamento="4"/>
-    <DP_DISTRIBUIDOR id_distribuidor="4" id_departamento="5"/>
-    <DP_DISTRIBUIDOR id_distribuidor="4" id_departamento="6"/>
-    <DP_DISTRIBUIDOR id_distribuidor="5" id_departamento="7"/>
-    <DP_DISTRIBUIDOR id_distribuidor="5" id_departamento="8"/>
-    <DP_DISTRIBUIDOR id_distribuidor="5" id_departamento="9"/>
+    <DEPARTAMENTO_DISTRIBUIDOR id_distribuidor="1" id_departamento="1"/>
+    <DEPARTAMENTO_DISTRIBUIDOR id_distribuidor="1" id_departamento="2"/>
+    <DEPARTAMENTO_DISTRIBUIDOR id_distribuidor="2" id_departamento="1"/>
+    <DEPARTAMENTO_DISTRIBUIDOR id_distribuidor="3" id_departamento="3"/>
+    <DEPARTAMENTO_DISTRIBUIDOR id_distribuidor="3" id_departamento="4"/>
+    <DEPARTAMENTO_DISTRIBUIDOR id_distribuidor="4" id_departamento="5"/>
+    <DEPARTAMENTO_DISTRIBUIDOR id_distribuidor="4" id_departamento="6"/>
+    <DEPARTAMENTO_DISTRIBUIDOR id_distribuidor="5" id_departamento="7"/>
+    <DEPARTAMENTO_DISTRIBUIDOR id_distribuidor="5" id_departamento="8"/>
+    <DEPARTAMENTO_DISTRIBUIDOR id_distribuidor="5" id_departamento="9"/>
 
 
     <PRODUTO name="Sensor MAP" id_departamento="1"/>
@@ -71,41 +71,41 @@
     <LOJISTA name="Big Bompreço">
 
 
-    <DISTRIBUIDOR_LOJ id_distribuidor="1" id_lojista="1"/>
-    <DISTRIBUIDOR_LOJ id_distribuidor="3" id_lojista="2"/>
-    <DISTRIBUIDOR_LOJ id_distribuidor="1" id_lojista="3"/>
-    <DISTRIBUIDOR_LOJ id_distribuidor="5" id_lojista="4"/>
-    <DISTRIBUIDOR_LOJ id_distribuidor="1" id_lojista="5"/>
-    <DISTRIBUIDOR_LOJ id_distribuidor="4" id_lojista="6"/>
-    <DISTRIBUIDOR_LOJ id_distribuidor="5" id_lojista="7"/>
-    <DISTRIBUIDOR_LOJ id_distribuidor="5" id_lojista="8"/>
-    <DISTRIBUIDOR_LOJ id_distribuidor="5" id_lojista="9"/>
-    <DISTRIBUIDOR_LOJ id_distribuidor="5" id_lojista="10"/>
+    <DISTRIBUIDOR_LOJISTA id_distribuidor="1" id_lojista="1"/>
+    <DISTRIBUIDOR_LOJISTA id_distribuidor="3" id_lojista="2"/>
+    <DISTRIBUIDOR_LOJISTA id_distribuidor="1" id_lojista="3"/>
+    <DISTRIBUIDOR_LOJISTA id_distribuidor="5" id_lojista="4"/>
+    <DISTRIBUIDOR_LOJISTA id_distribuidor="1" id_lojista="5"/>
+    <DISTRIBUIDOR_LOJISTA id_distribuidor="4" id_lojista="6"/>
+    <DISTRIBUIDOR_LOJISTA id_distribuidor="5" id_lojista="7"/>
+    <DISTRIBUIDOR_LOJISTA id_distribuidor="5" id_lojista="8"/>
+    <DISTRIBUIDOR_LOJISTA id_distribuidor="5" id_lojista="9"/>
+    <DISTRIBUIDOR_LOJISTA id_distribuidor="5" id_lojista="10"/>
 
     
-    <DP_LOJISTA id_lojista="1" id_departamento="1"/>
-    <DP_LOJISTA id_lojista="2" id_departamento="4"/>
-    <DP_LOJISTA id_lojista="3" id_departamento="2"/>
-    <DP_LOJISTA id_lojista="4" id_departamento="7"/>
-    <DP_LOJISTA id_lojista="4" id_departamento="8"/>
-    <DP_LOJISTA id_lojista="4" id_departamento="9"/>
-    <DP_LOJISTA id_lojista="5" id_departamento="5"/>
-    <DP_LOJISTA id_lojista="5" id_departamento="6"/>
-    <DP_LOJISTA id_lojista="5" id_departamento="7"/>
-    <DP_LOJISTA id_lojista="5" id_departamento="8"/>
-    <DP_LOJISTA id_lojista="5" id_departamento="9"/>
-    <DP_LOJISTA id_lojista="6" id_departamento="8"/>
-    <DP_LOJISTA id_lojista="6" id_departamento="9"/>
-    <DP_LOJISTA id_lojista="7" id_departamento="7"/>
-    <DP_LOJISTA id_lojista="8" id_departamento="7"/>
-    <DP_LOJISTA id_lojista="9" id_departamento="5"/>
-    <DP_LOJISTA id_lojista="9" id_departamento="6"/>
-    <DP_LOJISTA id_lojista="10" id_departamento="3"/>
-    <DP_LOJISTA id_lojista="10" id_departamento="4"/>
-    <DP_LOJISTA id_lojista="10" id_departamento="5"/>
-    <DP_LOJISTA id_lojista="10" id_departamento="6"/>
-    <DP_LOJISTA id_lojista="10" id_departamento="7"/>
-    <DP_LOJISTA id_lojista="10" id_departamento="8"/>
-    <DP_LOJISTA id_lojista="10" id_departamento="9"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="1" id_departamento="1"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="2" id_departamento="4"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="3" id_departamento="2"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="4" id_departamento="7"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="4" id_departamento="8"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="4" id_departamento="9"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="5" id_departamento="5"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="5" id_departamento="6"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="5" id_departamento="7"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="5" id_departamento="8"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="5" id_departamento="9"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="6" id_departamento="8"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="6" id_departamento="9"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="7" id_departamento="7"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="8" id_departamento="7"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="9" id_departamento="5"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="9" id_departamento="6"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="10" id_departamento="3"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="10" id_departamento="4"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="10" id_departamento="5"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="10" id_departamento="6"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="10" id_departamento="7"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="10" id_departamento="8"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="10" id_departamento="9"/>
 
 </dataset>
