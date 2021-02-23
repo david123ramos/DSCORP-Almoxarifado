@@ -1,0 +1,23 @@
+
+
+{
+    1 - Lojista tem N departamentos
+    2 - Lojista tem N distribuidores
+    3 - Departamento tem N produtos
+} 1 para muitos
+
+{
+    4 - Produto tem um Departamento 
+} 1 para 1
+
+
+{
+    5 - Vendas tem muitos produtos e produtos podem aparecer em muitas vendas.
+}Muitos para muitos.
+
+Criação de uma tabela de vendas 
+Criação de uma tabela assosiativa de venda_produto
+implemntação dos dos métodos toString, equals e hasCode
+implemntação de uma herança: Criação de uma classe usuário que pode ser pai da classe Lojista.
+https://github.com/marcosifpe/software-corporativo/blob/d36023987428bfba9157fb47980c8dcea74f6c71/exemplo_08/src/main/java/exemplo/jpa/Comprador.java
+Verificar anotações das classes

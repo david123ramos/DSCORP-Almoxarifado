@@ -1,6 +1,5 @@
 package com.descorp.models;
 
-import com.descorp.models.Product;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
