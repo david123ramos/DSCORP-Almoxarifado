@@ -78,4 +78,28 @@ import tests.descorp.java.DbUnitUtil;
         s.setSenha("PSW123adda");
         return s;
     }
+
+
+
+    String jpql = "select l from Lojista l";
+	TypedQuery<Lojista> typedQuery = entityManager.createQuery(jpql, Lojista.class);
+	List<Lojista> listaLojista = typedQuery.getResultList();
+		
+	for(Lojista lojista: listaLojista) {
+		System.out.println(lojista.getName());
+	}
+		
+
+	String jpql = "select l from Lojista l where id = :idLojista ";
+	int idLojista = 3;
+	
+	TypedQuery<Lojista> typedQuery = entityManager
+		.createQuery(jpql, Lojista.class)
+		.setParameter("id", idLojista);
+	List<Lojista> listaLojista = typedQuery.getResultList();
+		
+	for(Lojista lojista: listaLojista) {
+		System.out.println(lojista.getName());
+	}
+
  }
