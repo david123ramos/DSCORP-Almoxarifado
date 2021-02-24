@@ -17,9 +17,8 @@ import javax.persistence.OneToMany;
 @PrimaryKeyJoinColumn(name="ID_USUARIO", referencedColumnName = "ID")
 public class Lojista extends Usuario implements Serializable{
     
-    @OneToMany(mappedBy = "Lojista", fetch = FetchType.LAZY, 
-            cascade = CascadeType.ALL, orphanRemoval = true, targetEntity = Produto.class)
-    @JoinColumn(name = "ID_PRODUTOS", referencedColumnName = "Produto_id")
+    @OneToMany(mappedBy = "lojista", fetch = FetchType.LAZY,cascade = CascadeType.ALL, orphanRemoval = true, targetEntity = Produto.class)
+    //@JoinColumn(name = "ID_PRODUTOS", referencedColumnName = "Produto_id")
     private List<Produto> produtos;
     
     public boolean adicionar(Produto item) {

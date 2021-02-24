@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="2" failures="0" name="com.descorp.models.DistribuidorTeste" time="2.303" errors="2" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="14.0.2+12-46"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-14.0.2\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\David\Documents\NetBeansProjects\DSORP-ALMOXARIFADO"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="test" value="com.descorp.models.DistribuidorTeste"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\David\Documents\NetBeansProjects\DSORP-ALMOXARIFADO"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="14.0.2+12-46"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\David\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\NetBeans-12.0\netbeans\java\maven-nblib\netbeans-eventspy.jar"/>
+    <property name="classworlds.conf" value="C:\Program Files\NetBeans-12.0\netbeans\java\maven\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-14.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\AdoptOpenJDK\jdk-8.0.282.8-hotspot\bin;C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files\Docker\Docker\Resources\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_111\bin;C:\Program Files (x86)\Yarn\bin\;C:\Go\bin;C:\Program Files\dotnet\;C:\Program Files (x86)\Gow\bin;C:\Program Files\Git\cmd;C:\Program Files\7-Zip;C:\Maven\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;C:\Program Files\PostgreSQL\12\lib;C:\Program Files\PostgreSQL\12\bin;C:\Program Files\RedHat\java-1.8.0-openjdk-1.8.0.265-3\bin;C:\Program Files\RedHat\java-1.8.0-openjdk-1.8.0.265-3\jre\bin;C:\Program Files\Remote Logging\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\nodejs\;C:\Users\David\AppData\Local\Programs\Python\Python38-32\Scripts\;C:\Users\David\AppData\Local\Programs\Python\Python38-32\;C:\Users\David\AppData\Local\Microsoft\WindowsApps;C:\Users\David\AppData\Local\Programs\Microsoft VS Code\bin;C:\Mingw\bin;C:\Users\David\AppData\Local\Android\Sdk\platform-tools;C:\Users\David\AppData\Local\Yarn\bin;C:\Program Files\heroku\bin;C:\Users\David\go\bin;C:\Users\David\.dotnet\tools;C:\Users\David\AppData\Local\Programs\Fiddler;C:\Users\David\AppData\Local\Microsoft\WindowsApps;C:\Users\David\AppData\Roaming\npm;."/>
+    <property name="maven.conf" value="C:\Program Files\NetBeans-12.0\netbeans\java\maven\bin\../conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="58.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\Program Files\NetBeans-12.0\netbeans\java\maven\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\David"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="14"/>
+    <property name="user.name" value="David"/>
+    <property name="java.class.path" value="C:\Program Files\NetBeans-12.0\netbeans\java\maven\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="14"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dtest=com.descorp.models.DistribuidorTeste -Dmaven.ext.class.path=C:\Program Files\NetBeans-12.0\netbeans\java\maven-nblib\netbeans-eventspy.jar -Dfile.encoding=UTF-8 test-compile surefire:test"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-14.0.2"/>
+    <property name="user.language" value="pt"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="14.0.2"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\NetBeans-12.0\netbeans\java\maven\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2020-07-14"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="com.descorp.models.DistribuidorTeste" name="persistDistribuidor" time="2.234">
+    <error message="Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.8.v20201217-ecdf3c32c4): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.apache.derby.shared.common.error.DerbySQLIntegrityConstraintViolationException: INSERT na tabela &apos;TB_USUARIO&apos; causou uma violação na restrição de chave estrangeira &apos;FK_TB_USUARIO_ID&apos; para a chave (1).  A instrução foi desfeita.
+Error Code: 20000
+Call: INSERT INTO TB_USUARIO (TXT_CNPJ, DT_CRIACAO, TXT_EMAIL, name, TXT_SENHA, DTYPE) VALUES (?, ?, ?, ?, ?, ?)
+	bind =&gt; [65.139.251/0001-05, 2021-02-24 17:09:51.572, distribuidora@dist.com, Distribuidora Estadual - Matriz, DistD123, Distribuidor]
+Query: InsertObjectQuery(com.descorp.models.Distribuidor[ id=null ])" type="javax.persistence.PersistenceException">javax.persistence.PersistenceException: Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.8.v20201217-ecdf3c32c4): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.apache.derby.shared.common.error.DerbySQLIntegrityConstraintViolationException: INSERT na tabela &apos;TB_USUARIO&apos; causou uma violação na restrição de chave estrangeira &apos;FK_TB_USUARIO_ID&apos; para a chave (1).  A instrução foi desfeita.
+Error Code: 20000
+Call: INSERT INTO TB_USUARIO (TXT_CNPJ, DT_CRIACAO, TXT_EMAIL, name, TXT_SENHA, DTYPE) VALUES (?, ?, ?, ?, ?, ?)
+	bind =&gt; [65.139.251/0001-05, 2021-02-24 17:09:51.572, distribuidora@dist.com, Distribuidora Estadual - Matriz, DistD123, Distribuidor]
+Query: InsertObjectQuery(com.descorp.models.Distribuidor[ id=null ])
+	at org.eclipse.persistence.internal.jpa.EntityManagerImpl.flush(EntityManagerImpl.java:980)
+	at com.descorp.models.DistribuidorTeste.persistDistribuidor(DistribuidorTeste.java:55)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.8.v20201217-ecdf3c32c4): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.apache.derby.shared.common.error.DerbySQLIntegrityConstraintViolationException: INSERT na tabela &apos;TB_USUARIO&apos; causou uma violação na restrição de chave estrangeira &apos;FK_TB_USUARIO_ID&apos; para a chave (1).  A instrução foi desfeita.
+Error Code: 20000
+Call: INSERT INTO TB_USUARIO (TXT_CNPJ, DT_CRIACAO, TXT_EMAIL, name, TXT_SENHA, DTYPE) VALUES (?, ?, ?, ?, ?, ?)
+	bind =&gt; [65.139.251/0001-05, 2021-02-24 17:09:51.572, distribuidora@dist.com, Distribuidora Estadual - Matriz, DistD123, Distribuidor]
+Query: InsertObjectQuery(com.descorp.models.Distribuidor[ id=null ])
+	at org.eclipse.persistence.exceptions.DatabaseException.sqlException(DatabaseException.java:333)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeDirectNoSelect(DatabaseAccessor.java:908)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeNoSelect(DatabaseAccessor.java:970)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.basicExecuteCall(DatabaseAccessor.java:640)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeCall(DatabaseAccessor.java:567)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.basicExecuteCall(AbstractSession.java:2099)
+	at org.eclipse.persistence.sessions.server.ClientSession.executeCall(ClientSession.java:313)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.executeCall(DatasourceCallQueryMechanism.java:277)
+	at org.eclipse.persistence.internal.queries.DatasourceCallQueryMechanism.insertObject(DatasourceCallQueryMechanism.java:399)
+	at org.eclipse.persistence.internal.queries.StatementQueryMechanism.insertObject(StatementQueryMechanism.java:167)
+	at org.eclipse.persistence.internal.queries.StatementQueryMechanism.insertObject(StatementQueryMechanism.java:182)
+	at org.eclipse.persistence.internal.queries.DatabaseQueryMechanism.insertObjectForWrite(DatabaseQueryMechanism.java:504)
+	at org.eclipse.persistence.queries.InsertObjectQuery.executeCommit(InsertObjectQuery.java:82)
+	at org.eclipse.persistence.queries.InsertObjectQuery.executeCommitWithChangeSet(InsertObjectQuery.java:92)
+	at org.eclipse.persistence.internal.queries.DatabaseQueryMechanism.executeWriteWithChangeSet(DatabaseQueryMechanism.java:316)
+	at org.eclipse.persistence.queries.WriteObjectQuery.executeDatabaseQuery(WriteObjectQuery.java:60)
+	at org.eclipse.persistence.queries.DatabaseQuery.execute(DatabaseQuery.java:911)
+	at org.eclipse.persistence.queries.DatabaseQuery.executeInUnitOfWork(DatabaseQuery.java:810)
+	at org.eclipse.persistence.queries.ObjectLevelModifyQuery.executeInUnitOfWorkObjectLevelModifyQuery(ObjectLevelModifyQuery.java:110)
+	at org.eclipse.persistence.queries.ObjectLevelModifyQuery.executeInUnitOfWork(ObjectLevelModifyQuery.java:87)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.internalExecuteQuery(UnitOfWorkImpl.java:2983)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1898)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1880)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.executeQuery(AbstractSession.java:1830)
+	at org.eclipse.persistence.internal.sessions.CommitManager.commitNewObjectsForClassWithChangeSet(CommitManager.java:229)
+	at org.eclipse.persistence.internal.sessions.CommitManager.commitAllObjectsWithChangeSet(CommitManager.java:128)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.writeAllObjectsWithChangeSet(AbstractSession.java:4398)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitToDatabase(UnitOfWorkImpl.java:1495)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.commitToDatabaseWithPreBuiltChangeSet(UnitOfWorkImpl.java:1641)
+	at org.eclipse.persistence.internal.sessions.RepeatableWriteUnitOfWork.writeChanges(RepeatableWriteUnitOfWork.java:457)
+	at org.eclipse.persistence.internal.jpa.EntityManagerImpl.flush(EntityManagerImpl.java:975)
+	... 36 more
+Caused by: org.apache.derby.shared.common.error.DerbySQLIntegrityConstraintViolationException: INSERT na tabela &apos;TB_USUARIO&apos; causou uma violação na restrição de chave estrangeira &apos;FK_TB_USUARIO_ID&apos; para a chave (1).  A instrução foi desfeita.
+	at org.apache.derby.client.am.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.client.am.SqlException.getSQLException(Unknown Source)
+	at org.apache.derby.client.am.ClientPreparedStatement.executeUpdate(Unknown Source)
+	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeDirectNoSelect(DatabaseAccessor.java:898)
+	... 65 more
+Caused by: ERROR 23503: INSERT na tabela &apos;TB_USUARIO&apos; causou uma violação na restrição de chave estrangeira &apos;FK_TB_USUARIO_ID&apos; para a chave (1).  A instrução foi desfeita.
+	at org.apache.derby.client.am.ClientStatement.completeExecute(Unknown Source)
+	at org.apache.derby.client.net.NetStatementReply.parseEXCSQLSTTreply(Unknown Source)
+	at org.apache.derby.client.net.NetStatementReply.readExecute(Unknown Source)
+	at org.apache.derby.client.net.StatementReply.readExecute(Unknown Source)
+	at org.apache.derby.client.net.NetPreparedStatement.readExecute_(Unknown Source)
+	at org.apache.derby.client.am.ClientPreparedStatement.readExecute(Unknown Source)
+	at org.apache.derby.client.am.ClientPreparedStatement.flowExecute(Unknown Source)
+	at org.apache.derby.client.am.ClientPreparedStatement.executeUpdateX(Unknown Source)
+	... 67 more
+</error>
+    <system-out>[EL Fine]: server: 2021-02-24 17:09:50.129--Thread(Thread[main,5,main])--Configured server platform: org.eclipse.persistence.platform.server.NoServerPlatform
+[EL Config]: metadata: 2021-02-24 17:09:50.39--ServerSession(1359953204)--Thread(Thread[main,5,main])--The access type for the persistent class [class com.descorp.models.Produto] is set to [FIELD].
+[EL Config]: metadata: 2021-02-24 17:09:50.432--ServerSession(1359953204)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to one mapping element [field dpto] is being defaulted to: class com.descorp.models.Departamento.
+[EL Config]: metadata: 2021-02-24 17:09:50.443--ServerSession(1359953204)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to many mapping element [field vendas] is being defaulted to: class com.descorp.models.Venda.
+[EL Config]: metadata: 2021-02-24 17:09:50.445--ServerSession(1359953204)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field lojista] is being defaulted to: class com.descorp.models.Lojista.
+[EL Config]: metadata: 2021-02-24 17:09:50.452--ServerSession(1359953204)--Thread(Thread[main,5,main])--The access type for the persistent class [class com.descorp.models.Lojista] is set to [FIELD].
+[EL Config]: metadata: 2021-02-24 17:09:50.453--ServerSession(1359953204)--Thread(Thread[main,5,main])--The access type for the persistent class [class com.descorp.models.DistribuidorLojista] is set to [FIELD].
+[EL Config]: metadata: 2021-02-24 17:09:50.454--ServerSession(1359953204)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to one mapping element [field lojista] is being defaulted to: class com.descorp.models.Lojista.
+[EL Config]: metadata: 2021-02-24 17:09:50.454--ServerSession(1359953204)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to one mapping element [field distribuidor] is being defaulted to: class com.descorp.models.Distribuidor.
+[EL Config]: metadata: 2021-02-24 17:09:50.455--ServerSession(1359953204)--Thread(Thread[main,5,main])--The access type for the persistent class [class com.descorp.models.Distribuidor] is set to [FIELD].
+[EL Config]: metadata: 2021-02-24 17:09:50.455--ServerSession(1359953204)--Thread(Thread[main,5,main])--The access type for the persistent class [class com.descorp.models.Venda] is set to [FIELD].
+[EL Config]: metadata: 2021-02-24 17:09:50.459--ServerSession(1359953204)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to many mapping element [field produtos] is being defaulted to: class com.descorp.models.Produto.
+[EL Config]: metadata: 2021-02-24 17:09:50.46--ServerSession(1359953204)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to one mapping element [field lojista] is being defaulted to: class com.descorp.models.Lojista.
+[EL Config]: metadata: 2021-02-24 17:09:50.46--ServerSession(1359953204)--Thread(Thread[main,5,main])--The access type for the persistent class [class com.descorp.models.Departamento] is set to [FIELD].
+[EL Config]: metadata: 2021-02-24 17:09:50.461--ServerSession(1359953204)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field usuarios] is being defaulted to: class com.descorp.models.Usuario.
+[EL Config]: metadata: 2021-02-24 17:09:50.462--ServerSession(1359953204)--Thread(Thread[main,5,main])--The alias name for the entity class [class com.descorp.models.Produto] is being defaulted to: Produto.
+[EL Config]: metadata: 2021-02-24 17:09:50.489--ServerSession(1359953204)--Thread(Thread[main,5,main])--The alias name for the entity class [class com.descorp.models.Lojista] is being defaulted to: Lojista.
+[EL Config]: metadata: 2021-02-24 17:09:50.489--ServerSession(1359953204)--Thread(Thread[main,5,main])--The alias name for the entity class [class com.descorp.models.Usuario] is being defaulted to: Usuario.
+[EL Config]: metadata: 2021-02-24 17:09:50.492--ServerSession(1359953204)--Thread(Thread[main,5,main])--The discriminator column name for the root inheritance class [com.descorp.models.Usuario] is being defaulted to: DTYPE.
+[EL Config]: metadata: 2021-02-24 17:09:50.499--ServerSession(1359953204)--Thread(Thread[main,5,main])--The alias name for the entity class [class com.descorp.models.DistribuidorLojista] is being defaulted to: DistribuidorLojista.
+[EL Config]: metadata: 2021-02-24 17:09:50.5--ServerSession(1359953204)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2021-02-24 17:09:50.501--ServerSession(1359953204)--Thread(Thread[main,5,main])--The alias name for the entity class [class com.descorp.models.Distribuidor] is being defaulted to: Distribuidor.
+[EL Config]: metadata: 2021-02-24 17:09:50.502--ServerSession(1359953204)--Thread(Thread[main,5,main])--The alias name for the entity class [class com.descorp.models.Venda] is being defaulted to: Venda.
+[EL Config]: metadata: 2021-02-24 17:09:50.504--ServerSession(1359953204)--Thread(Thread[main,5,main])--The alias name for the entity class [class com.descorp.models.Departamento] is being defaulted to: Departamento.
+[EL Config]: metadata: 2021-02-24 17:09:50.504--ServerSession(1359953204)--Thread(Thread[main,5,main])--The table name for entity [class com.descorp.models.Departamento] is being defaulted to: DEPARTAMENTO.
+[EL Config]: metadata: 2021-02-24 17:09:50.528--ServerSession(1359953204)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field lojista] is being defaulted to: id.
+[EL Config]: metadata: 2021-02-24 17:09:50.529--ServerSession(1359953204)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field departamento] is being defaulted to: id.
+[EL Config]: metadata: 2021-02-24 17:09:50.552--ServerSession(1359953204)--Thread(Thread[main,5,main])--The source primary key column name for the many to many mapping [field produtos] is being defaulted to: Venda_id.
+[EL Config]: metadata: 2021-02-24 17:09:50.552--ServerSession(1359953204)--Thread(Thread[main,5,main])--The target primary key column name for the many to many mapping [field produtos] is being defaulted to: id.
+[EL Info]: 2021-02-24 17:09:50.695--ServerSession(1359953204)--Thread(Thread[main,5,main])--EclipseLink, version: Eclipse Persistence Services - 2.7.8.v20201217-ecdf3c32c4
+[EL Fine]: connection: 2021-02-24 17:09:50.706--ServerSession(1359953204)--Connection(113411247)--Thread(Thread[main,5,main])--connecting(DatabaseLogin(
+	platform=&gt;DerbyPlatform
+	user name=&gt; &quot;adm&quot;
+	datasource URL=&gt; &quot;jdbc:derby://localhost:1527/warehouse;create=true&quot;
+))
+[EL Config]: connection: 2021-02-24 17:09:50.93--ServerSession(1359953204)--Connection(41489123)--Thread(Thread[main,5,main])--Connected: jdbc:derby://localhost:1527/warehouse;create=true
+	User: adm
+	Database: Apache Derby  Version: 10.14.2.0 - (1828579)
+	Driver: Apache Derby Network Client JDBC Driver  Version: 10.14.2.0 - (1828579)
+[EL Warning]: metadata: 2021-02-24 17:09:50.944--ServerSession(1359953204)--Thread(Thread[main,5,main])--Reverting the lazy setting on the OneToOne or ManyToOne attribute [departamento] for the entity class [class com.descorp.models.Usuario] since weaving was not enabled or did not occur.
+[EL Warning]: metadata: 2021-02-24 17:09:50.966--ServerSession(1359953204)--Thread(Thread[main,5,main])--Reverting the lazy setting on the OneToOne or ManyToOne attribute [lojista] for the entity class [class com.descorp.models.Produto] since weaving was not enabled or did not occur.
+[EL Fine]: connection: 2021-02-24 17:09:51.003--ServerSession(1359953204)--Thread(Thread[main,5,main])--/file:/C:/Users/David/Documents/NetBeansProjects/DSORP-ALMOXARIFADO/target/classes/_dscorp_persistence login successful
+[EL Fine]: sql: 2021-02-24 17:09:51.034--ServerSession(1359953204)--Connection(41489123)--Thread(Thread[main,5,main])--ALTER TABLE TB_PRODUTO DROP CONSTRAINT TBPRDTOddprtamento
+[EL Fine]: sql: 2021-02-24 17:09:51.054--ServerSession(1359953204)--Connection(41489123)--Thread(Thread[main,5,main])--ALTER TABLE TB_PRODUTO DROP CONSTRAINT FK_TB_PRODUTO_id
+[EL Fine]: sql: 2021-02-24 17:09:51.069--ServerSession(1359953204)--Thread(Thread[main,5,main])--VALUES(1)
+[EL Warning]: 2021-02-24 17:09:51.081--ServerSession(1359953204)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.8.v20201217-ecdf3c32c4): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLSyntaxErrorException: ALTER TABLE falhou. Não existe a restrição &apos;ADM.FK_TB_PRODUTO_ID&apos; na tabela &apos;&quot;ADM&quot;.&quot;TB_PRODUTO&quot;&apos;.
+Error Code: 30000
+Call: ALTER TABLE TB_PRODUTO DROP CONSTRAINT FK_TB_PRODUTO_id
+Query: DataModifyQuery(sql=&quot;ALTER TABLE TB_PRODUTO DROP CONSTRAINT FK_TB_PRODUTO_id&quot;)
+[EL Fine]: sql: 2021-02-24 17:09:51.084--ServerSession(1359953204)--Connection(41489123)--Thread(Thread[main,5,main])--ALTER TABLE TB_USUARIO DROP CONSTRAINT FK_TB_USUARIO_id
+[EL Fine]: sql: 2021-02-24 17:09:51.091--ServerSession(1359953204)--Connection(41489123)--Thread(Thread[main,5,main])--ALTER TABLE TB_LOJISTA DROP CONSTRAINT TBLOJISTAIDUSUARIO
+[EL Fine]: sql: 2021-02-24 17:09:51.094--ServerSession(1359953204)--Thread(Thread[main,5,main])--VALUES(1)
+[EL Warning]: 2021-02-24 17:09:51.097--ServerSession(1359953204)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.8.v20201217-ecdf3c32c4): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLSyntaxErrorException: ALTER TABLE falhou. Não existe a restrição &apos;ADM.TBLOJISTAIDUSUARIO&apos; na tabela &apos;&quot;ADM&quot;.&quot;TB_LOJISTA&quot;&apos;.
+Error Code: 30000
+Call: ALTER TABLE TB_LOJISTA DROP CONSTRAINT TBLOJISTAIDUSUARIO
+Query: DataModifyQuery(sql=&quot;ALTER TABLE TB_LOJISTA DROP CONSTRAINT TBLOJISTAIDUSUARIO&quot;)
+[EL Fine]: sql: 2021-02-24 17:09:51.099--ServerSession(1359953204)--Connection(41489123)--Thread(Thread[main,5,main])--ALTER TABLE TB_DISTRIBUIDOR DROP CONSTRAINT TBDSTRIBUIDORdsrio
+[EL Fine]: sql: 2021-02-24 17:09:51.102--ServerSession(1359953204)--Thread(Thread[main,5,main])--VALUES(1)
+[EL Warning]: 2021-02-24 17:09:51.105--ServerSession(1359953204)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.8.v20201217-ecdf3c32c4): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLSyntaxErrorException: ALTER TABLE falhou. Não existe a restrição &apos;ADM.TBDSTRIBUIDORDSRIO&apos; na tabela &apos;&quot;ADM&quot;.&quot;TB_DISTRIBUIDOR&quot;&apos;.
+Error Code: 30000
+Call: ALTER TABLE TB_DISTRIBUIDOR DROP CONSTRAINT TBDSTRIBUIDORdsrio
+Query: DataModifyQuery(sql=&quot;ALTER TABLE TB_DISTRIBUIDOR DROP CONSTRAINT TBDSTRIBUIDORdsrio&quot;)
+[EL Fine]: sql: 2021-02-24 17:09:51.106--ServerSession(1359953204)--Connection(41489123)--Thread(Thread[main,5,main])--ALTER TABLE DISTRIBUIDOR_LOJISTA DROP CONSTRAINT DSTRBDRLJSDDSTRBDR
+[EL Fine]: sql: 2021-02-24 17:09:51.122--ServerSession(1359953204)--Connection(41489123)--Thread(Thread[main,5,main])--ALTER TABLE DISTRIBUIDOR_LOJISTA DROP CONSTRAINT DSTRBDRLJISTADLJST
+[EL Fine]: sql: 2021-02-24 17:09:51.133--ServerSession(1359953204)--Connection(41489123)--Thread(Thread[main,5,main])--ALTER TABLE TB_VENDA DROP CONSTRAINT TB_VENDAID_LOJISTA
+[EL Fine]: sql: 2021-02-24 17:09:51.144--ServerSession(1359953204)--Connection(41489123)--Thread(Thread[main,5,main])--ALTER TABLE venda_produto DROP CONSTRAINT venda_produto_id
+[EL Fine]: sql: 2021-02-24 17:09:51.148--ServerSession(1359953204)--Thread(Thread[main,5,main])--VALUES(1)
+[EL Warning]: 2021-02-24 17:09:51.15--ServerSession(1359953204)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.8.v20201217-ecdf3c32c4): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLSyntaxErrorException: ALTER TABLE falhou. Não existe a restrição &apos;ADM.VENDA_PRODUTO_ID&apos; na tabela &apos;&quot;ADM&quot;.&quot;VENDA_PRODUTO&quot;&apos;.
+Error Code: 30000
+Call: ALTER TABLE venda_produto DROP CONSTRAINT venda_produto_id
+Query: DataModifyQuery(sql=&quot;ALTER TABLE venda_produto DROP CONSTRAINT venda_produto_id&quot;)
+[EL Fine]: sql: 2021-02-24 17:09:51.15--ServerSession(1359953204)--Connection(41489123)--Thread(Thread[main,5,main])--ALTER TABLE venda_produto DROP CONSTRAINT vndaprodutoVendaid
+[EL Fine]: sql: 2021-02-24 17:09:51.155--ServerSession(1359953204)--Thread(Thread[main,5,main])--VALUES(1)
+[EL Warning]: 2021-02-24 17:09:51.157--ServerSession(1359953204)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.8.v20201217-ecdf3c32c4): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLSyntaxErrorException: ALTER TABLE falhou. Não existe a restrição &apos;ADM.VNDAPRODUTOVENDAID&apos; na tabela &apos;&quot;ADM&quot;.&quot;VENDA_PRODUTO&quot;&apos;.
+Error Code: 30000
+Call: ALTER TABLE venda_produto DROP CONSTRAINT vndaprodutoVendaid
+Query: DataModifyQuery(sql=&quot;ALTER TABLE venda_produto DROP CONSTRAINT vndaprodutoVendaid&quot;)
+[EL Fine]: sql: 2021-02-24 17:09:51.158--ServerSession(1359953204)--Connection(41489123)--Thread(Thread[main,5,main])--DROP TABLE TB_PRODUTO
+[EL Fine]: sql: 2021-02-24 17:09:51.174--ServerSession(1359953204)--Connection(41489123)--Thread(Thread[main,5,main])--DROP TABLE TB_USUARIO
+[EL Fine]: sql: 2021-02-24 17:09:51.188--ServerSession(1359953204)--Connection(41489123)--Thread(Thread[main,5,main])--DROP TABLE TB_LOJISTA
+[EL Fine]: sql: 2021-02-24 17:09:51.205--ServerSession(1359953204)--Connection(41489123)--Thread(Thread[main,5,main])--DROP TABLE TB_DISTRIBUIDOR
+[EL Fine]: sql: 2021-02-24 17:09:51.222--ServerSession(1359953204)--Connection(41489123)--Thread(Thread[main,5,main])--DROP TABLE DISTRIBUIDOR_LOJISTA
+[EL Fine]: sql: 2021-02-24 17:09:51.239--ServerSession(1359953204)--Connection(41489123)--Thread(Thread[main,5,main])--DROP TABLE TB_VENDA
+[EL Fine]: sql: 2021-02-24 17:09:51.254--ServerSession(1359953204)--Connection(41489123)--Thread(Thread[main,5,main])--DROP TABLE DEPARTAMENTO
+[EL Fine]: sql: 2021-02-24 17:09:51.271--ServerSession(1359953204)--Connection(41489123)--Thread(Thread[main,5,main])--DROP TABLE venda_produto
+[EL Fine]: sql: 2021-02-24 17:09:51.294--ServerSession(1359953204)--Connection(41489123)--Thread(Thread[main,5,main])--CREATE TABLE TB_PRODUTO (id BIGINT GENERATED BY DEFAULT AS IDENTITY NOT NULL, name VARCHAR(255), id_departamento INTEGER, PRIMARY KEY (id))
+[EL Fine]: sql: 2021-02-24 17:09:51.313--ServerSession(1359953204)--Connection(41489123)--Thread(Thread[main,5,main])--CREATE TABLE TB_USUARIO (id INTEGER GENERATED BY DEFAULT AS IDENTITY NOT NULL, DTYPE VARCHAR(31), TXT_CNPJ VARCHAR(255), DT_CRIACAO TIMESTAMP, TXT_EMAIL VARCHAR(30) NOT NULL, name VARCHAR(255), TXT_SENHA VARCHAR(255), PRIMARY KEY (id))
+[EL Fine]: sql: 2021-02-24 17:09:51.331--ServerSession(1359953204)--Connection(41489123)--Thread(Thread[main,5,main])--CREATE TABLE TB_LOJISTA (ID_USUARIO BIGINT NOT NULL, PRIMARY KEY (ID_USUARIO))
+[EL Fine]: sql: 2021-02-24 17:09:51.35--ServerSession(1359953204)--Connection(41489123)--Thread(Thread[main,5,main])--CREATE TABLE TB_DISTRIBUIDOR (id_usuario BIGINT NOT NULL, PRIMARY KEY (id_usuario))
+[EL Fine]: sql: 2021-02-24 17:09:51.374--ServerSession(1359953204)--Connection(41489123)--Thread(Thread[main,5,main])--CREATE TABLE DISTRIBUIDOR_LOJISTA (ID INTEGER GENERATED BY DEFAULT AS IDENTITY NOT NULL, ID_DISTRIBUIDOR INTEGER, ID_LOJISTA INTEGER, PRIMARY KEY (ID))
+[EL Fine]: sql: 2021-02-24 17:09:51.391--ServerSession(1359953204)--Connection(41489123)--Thread(Thread[main,5,main])--CREATE TABLE TB_VENDA (Venda_id BIGINT GENERATED BY DEFAULT AS IDENTITY NOT NULL, DT_CRIACAO TIMESTAMP, ID_LOJISTA INTEGER, PRIMARY KEY (Venda_id))
+[EL Fine]: sql: 2021-02-24 17:09:51.41--ServerSession(1359953204)--Connection(41489123)--Thread(Thread[main,5,main])--CREATE TABLE DEPARTAMENTO (id INTEGER GENERATED BY DEFAULT AS IDENTITY NOT NULL, NOME VARCHAR(255), PRIMARY KEY (id))
+[EL Fine]: sql: 2021-02-24 17:09:51.425--ServerSession(1359953204)--Connection(41489123)--Thread(Thread[main,5,main])--CREATE TABLE venda_produto (id INTEGER NOT NULL, Venda_id BIGINT NOT NULL, PRIMARY KEY (id, Venda_id))
+[EL Fine]: sql: 2021-02-24 17:09:51.436--ServerSession(1359953204)--Connection(41489123)--Thread(Thread[main,5,main])--ALTER TABLE TB_PRODUTO ADD CONSTRAINT TBPRDTOddprtamento FOREIGN KEY (id_departamento) REFERENCES DEPARTAMENTO (id)
+[EL Fine]: sql: 2021-02-24 17:09:51.446--ServerSession(1359953204)--Connection(41489123)--Thread(Thread[main,5,main])--ALTER TABLE TB_PRODUTO ADD CONSTRAINT FK_TB_PRODUTO_id FOREIGN KEY (id) REFERENCES TB_USUARIO (id)
+[EL Fine]: sql: 2021-02-24 17:09:51.454--ServerSession(1359953204)--Thread(Thread[main,5,main])--VALUES(1)
+[EL Warning]: 2021-02-24 17:09:51.456--ServerSession(1359953204)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.8.v20201217-ecdf3c32c4): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLTransactionRollbackException: A restrição &apos;FK_TB_PRODUTO_ID&apos; não é válida: não há nenhuma restrição de chave primária ou exclusiva na tabela &apos;&quot;ADM&quot;.&quot;TB_USUARIO&quot;&apos; que corresponda ao número e aos tipos de colunas na chave estrangeira.
+Error Code: 30000
+Call: ALTER TABLE TB_PRODUTO ADD CONSTRAINT FK_TB_PRODUTO_id FOREIGN KEY (id) REFERENCES TB_USUARIO (id)
+Query: DataModifyQuery(sql=&quot;ALTER TABLE TB_PRODUTO ADD CONSTRAINT FK_TB_PRODUTO_id FOREIGN KEY (id) REFERENCES TB_USUARIO (id)&quot;)
+[EL Fine]: sql: 2021-02-24 17:09:51.457--ServerSession(1359953204)--Connection(41489123)--Thread(Thread[main,5,main])--ALTER TABLE TB_USUARIO ADD CONSTRAINT FK_TB_USUARIO_id FOREIGN KEY (id) REFERENCES DEPARTAMENTO (id)
+[EL Fine]: sql: 2021-02-24 17:09:51.461--ServerSession(1359953204)--Connection(41489123)--Thread(Thread[main,5,main])--ALTER TABLE TB_LOJISTA ADD CONSTRAINT TBLOJISTAIDUSUARIO FOREIGN KEY (ID_USUARIO) REFERENCES TB_USUARIO (id)
+[EL Fine]: sql: 2021-02-24 17:09:51.467--ServerSession(1359953204)--Thread(Thread[main,5,main])--VALUES(1)
+[EL Warning]: 2021-02-24 17:09:51.469--ServerSession(1359953204)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.8.v20201217-ecdf3c32c4): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLTransactionRollbackException: A restrição &apos;TBLOJISTAIDUSUARIO&apos; não é válida: não há nenhuma restrição de chave primária ou exclusiva na tabela &apos;&quot;ADM&quot;.&quot;TB_USUARIO&quot;&apos; que corresponda ao número e aos tipos de colunas na chave estrangeira.
+Error Code: 30000
+Call: ALTER TABLE TB_LOJISTA ADD CONSTRAINT TBLOJISTAIDUSUARIO FOREIGN KEY (ID_USUARIO) REFERENCES TB_USUARIO (id)
+Query: DataModifyQuery(sql=&quot;ALTER TABLE TB_LOJISTA ADD CONSTRAINT TBLOJISTAIDUSUARIO FOREIGN KEY (ID_USUARIO) REFERENCES TB_USUARIO (id)&quot;)
+[EL Fine]: sql: 2021-02-24 17:09:51.471--ServerSession(1359953204)--Connection(41489123)--Thread(Thread[main,5,main])--ALTER TABLE TB_DISTRIBUIDOR ADD CONSTRAINT TBDSTRIBUIDORdsrio FOREIGN KEY (id_usuario) REFERENCES TB_USUARIO (id)
+[EL Fine]: sql: 2021-02-24 17:09:51.478--ServerSession(1359953204)--Thread(Thread[main,5,main])--VALUES(1)
+[EL Warning]: 2021-02-24 17:09:51.48--ServerSession(1359953204)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.8.v20201217-ecdf3c32c4): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLTransactionRollbackException: A restrição &apos;TBDSTRIBUIDORDSRIO&apos; não é válida: não há nenhuma restrição de chave primária ou exclusiva na tabela &apos;&quot;ADM&quot;.&quot;TB_USUARIO&quot;&apos; que corresponda ao número e aos tipos de colunas na chave estrangeira.
+Error Code: 30000
+Call: ALTER TABLE TB_DISTRIBUIDOR ADD CONSTRAINT TBDSTRIBUIDORdsrio FOREIGN KEY (id_usuario) REFERENCES TB_USUARIO (id)
+Query: DataModifyQuery(sql=&quot;ALTER TABLE TB_DISTRIBUIDOR ADD CONSTRAINT TBDSTRIBUIDORdsrio FOREIGN KEY (id_usuario) REFERENCES TB_USUARIO (id)&quot;)
+[EL Fine]: sql: 2021-02-24 17:09:51.48--ServerSession(1359953204)--Connection(41489123)--Thread(Thread[main,5,main])--ALTER TABLE DISTRIBUIDOR_LOJISTA ADD CONSTRAINT DSTRBDRLJSDDSTRBDR FOREIGN KEY (ID_DISTRIBUIDOR) REFERENCES TB_USUARIO (id)
+[EL Fine]: sql: 2021-02-24 17:09:51.491--ServerSession(1359953204)--Connection(41489123)--Thread(Thread[main,5,main])--ALTER TABLE DISTRIBUIDOR_LOJISTA ADD CONSTRAINT DSTRBDRLJISTADLJST FOREIGN KEY (ID_LOJISTA) REFERENCES TB_USUARIO (id)
+[EL Fine]: sql: 2021-02-24 17:09:51.501--ServerSession(1359953204)--Connection(41489123)--Thread(Thread[main,5,main])--ALTER TABLE TB_VENDA ADD CONSTRAINT TB_VENDAID_LOJISTA FOREIGN KEY (ID_LOJISTA) REFERENCES TB_USUARIO (id)
+[EL Fine]: sql: 2021-02-24 17:09:51.511--ServerSession(1359953204)--Connection(41489123)--Thread(Thread[main,5,main])--ALTER TABLE venda_produto ADD CONSTRAINT venda_produto_id FOREIGN KEY (id) REFERENCES TB_PRODUTO (id)
+[EL Fine]: sql: 2021-02-24 17:09:51.53--ServerSession(1359953204)--Thread(Thread[main,5,main])--VALUES(1)
+[EL Warning]: 2021-02-24 17:09:51.531--ServerSession(1359953204)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.8.v20201217-ecdf3c32c4): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLTransactionRollbackException: A restrição &apos;VENDA_PRODUTO_ID&apos; não é válida: não há nenhuma restrição de chave primária ou exclusiva na tabela &apos;&quot;ADM&quot;.&quot;TB_PRODUTO&quot;&apos; que corresponda ao número e aos tipos de colunas na chave estrangeira.
+Error Code: 30000
+Call: ALTER TABLE venda_produto ADD CONSTRAINT venda_produto_id FOREIGN KEY (id) REFERENCES TB_PRODUTO (id)
+Query: DataModifyQuery(sql=&quot;ALTER TABLE venda_produto ADD CONSTRAINT venda_produto_id FOREIGN KEY (id) REFERENCES TB_PRODUTO (id)&quot;)
+[EL Fine]: sql: 2021-02-24 17:09:51.579--ClientSession(1688470144)--Connection(41489123)--Thread(Thread[main,5,main])--INSERT INTO TB_USUARIO (TXT_CNPJ, DT_CRIACAO, TXT_EMAIL, name, TXT_SENHA, DTYPE) VALUES (?, ?, ?, ?, ?, ?)
+	bind =&gt; [65.139.251/0001-05, 2021-02-24 17:09:51.572, distribuidora@dist.com, Distribuidora Estadual - Matriz, DistD123, Distribuidor]
+[EL Fine]: sql: 2021-02-24 17:09:51.591--ClientSession(1688470144)--Thread(Thread[main,5,main])--VALUES(1)
+[EL Warning]: 2021-02-24 17:09:51.595--UnitOfWork(1811922029)--Thread(Thread[main,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.7.8.v20201217-ecdf3c32c4): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.apache.derby.shared.common.error.DerbySQLIntegrityConstraintViolationException: INSERT na tabela &apos;TB_USUARIO&apos; causou uma violação na restrição de chave estrangeira &apos;FK_TB_USUARIO_ID&apos; para a chave (1).  A instrução foi desfeita.
+Error Code: 20000
+Call: INSERT INTO TB_USUARIO (TXT_CNPJ, DT_CRIACAO, TXT_EMAIL, name, TXT_SENHA, DTYPE) VALUES (?, ?, ?, ?, ?, ?)
+	bind =&gt; [65.139.251/0001-05, 2021-02-24 17:09:51.572, distribuidora@dist.com, Distribuidora Estadual - Matriz, DistD123, Distribuidor]
+Query: InsertObjectQuery(com.descorp.models.Distribuidor[ id=null ])
+</system-out>
+  </testcase>
+  <testcase classname="com.descorp.models.DistribuidorTeste" name="consultDistribuidor" time="0.069">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.descorp.models.DistribuidorTeste.consultDistribuidor(DistribuidorTeste.java:64)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>[EL Fine]: connection: 2021-02-24 17:09:51.62--ServerSession(1359953204)--Connection(1808432653)--Thread(Thread[main,5,main])--connecting(DatabaseLogin(
+	platform=&gt;DerbyPlatform
+	user name=&gt; &quot;adm&quot;
+	datasource URL=&gt; &quot;jdbc:derby://localhost:1527/warehouse;create=true&quot;
+))
+[EL Config]: connection: 2021-02-24 17:09:51.629--ServerSession(1359953204)--Connection(640808588)--Thread(Thread[main,5,main])--Connected: jdbc:derby://localhost:1527/warehouse;create=true
+	User: adm
+	Database: Apache Derby  Version: 10.14.2.0 - (1828579)
+	Driver: Apache Derby Network Client JDBC Driver  Version: 10.14.2.0 - (1828579)
+[EL Fine]: sql: 2021-02-24 17:09:51.63--ServerSession(1359953204)--Connection(640808588)--Thread(Thread[main,5,main])--SELECT t0.id, t0.DTYPE, t0.TXT_CNPJ, t0.DT_CRIACAO, t0.TXT_EMAIL, t0.name, t0.TXT_SENHA, t1.id_usuario FROM TB_USUARIO t0, TB_DISTRIBUIDOR t1 WHERE ((t0.id = ?) AND ((t1.id_usuario = t0.id) AND (t0.DTYPE = &apos;Distribuidor&apos;)))
+	bind =&gt; [1]
+</system-out>
+  </testcase>
+</testsuite>

@@ -5,32 +5,63 @@ import java.util.List;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "TB_PRODUTO")
 public class Produto implements Serializable{
 
     @Id
-    @Column (name= "Produto_id")
+    @Column (name= "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     
-    @Column (name="NOME")
+    @Column (name="name")
     private String name;
     
     @OneToOne(cascade = CascadeType.ALL)
-    @Column (name="ID_DEPARTAMENTO")
-    @JoinColumn(name = "ID_DEPARTAMENTO", referencedColumnName = "id")
+    @JoinColumn(name = "id_departamento", referencedColumnName = "id")
     private Departamento dpto;
     
-    @ManyToMany(mappedBy = "produtos_venda")
+    @ManyToMany(mappedBy = "produtos", cascade = CascadeType.ALL)
     private List<Venda> vendas;
+    
 
+    @ManyToOne(fetch = FetchType.LAZY, optional = false, cascade = CascadeType.ALL)
+    @JoinColumn(name = "id", insertable=false, updatable=false)
+    private Lojista lojista;
+
+    public Departamento getDpto() {
+        return dpto;
+    }
+
+    public void setDpto(Departamento dpto) {
+        this.dpto = dpto;
+    }
+
+    public List<Venda> getVendas() {
+        return vendas;
+    }
+
+    public void setVendas(List<Venda> vendas) {
+        this.vendas = vendas;
+    }
+
+    public Lojista getLojista() {
+        return lojista;
+    }
+
+    public void setLojista(Lojista lojista) {
+        this.lojista = lojista;
+    }
 
     public Integer getId() {
         return id;
@@ -78,5 +109,4 @@ public class Produto implements Serializable{
     public String toString() {
         return "com.descorp.models.Produto[ id=" + id + " ]";
     }
-    
 }

@@ -2,13 +2,10 @@ package com.descorp.models;
 
 import java.io.Serializable;
 import java.util.Date;
-import java.util.List;
 import javax.persistence.Access;
 import javax.persistence.AccessType;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
-import javax.persistence.DiscriminatorColumn;
-import javax.persistence.DiscriminatorType;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -18,7 +15,6 @@ import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
 import javax.persistence.PrePersist;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
@@ -26,7 +22,6 @@ import javax.persistence.TemporalType;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 //import org.hibernate.validator.constraints.br.CPF;
 
@@ -34,8 +29,7 @@ import javax.validation.constraints.Size;
 
 @Entity
 @Table(name = "TB_USUARIO")
-@Inheritance(strategy = InheritanceType.JOINED) 
-@DiscriminatorColumn(name = "DISC_USUARIO", discriminatorType = DiscriminatorType.STRING, length = 1)
+@Inheritance(strategy = InheritanceType.JOINED)
 @Access(AccessType.FIELD)
 public abstract class Usuario implements Serializable {
     @Id
@@ -49,7 +43,6 @@ public abstract class Usuario implements Serializable {
 
     @NotBlank
     @Size(max = 30)
-    @Pattern(regexp = "\\p{Upper}{1}\\p{Lower}+", message = "{exemplo.jpa.Usuario.nome}")
     @Column(name = "name")
     protected String name;
     
@@ -60,7 +53,6 @@ public abstract class Usuario implements Serializable {
 
     @NotBlank
     @Size(min = 6, max = 20)
-    @Pattern(regexp = "((?=.*\\p{Digit})(?=.*\\p{Lower})(?=.*\\p{Upper})(?=.*\\p{Punct}).{6,20})",  message = "{exemplo.jpa.Usuario.senha}")
     @Column(name = "TXT_SENHA")
     protected String senha;
 
@@ -69,10 +61,9 @@ public abstract class Usuario implements Serializable {
     @Column(name = "DT_CRIACAO")
     protected Date dataCriacao;
     
-        
-    @OneToMany(mappedBy = "Usuario", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true, targetEntity = Departamento.class)
-    @JoinColumn(name = "ID_DPTOS", referencedColumnName = "id")
-    private List<Departamento> departamentos;
+    @ManyToOne(fetch = FetchType.LAZY, optional = false, cascade = CascadeType.ALL, targetEntity = Departamento.class)
+    @JoinColumn(name = "id" , insertable=false, updatable=false)
+    private Departamento departamento;
     
     @PrePersist
     public void setDataCriacao() {
@@ -128,12 +119,12 @@ public abstract class Usuario implements Serializable {
         this.name = name;
     }
 
-    public List<Departamento> getDepartamentos() {
-        return departamentos;
+    public Departamento getDepartamento() {
+        return departamento;
     }
 
-    public void setDepartamentos(List<Departamento> departamentos) {
-        this.departamentos = departamentos;
+    public void setDepartamentos(Departamento departamento) {
+        this.departamento = departamento;
     }
 
 

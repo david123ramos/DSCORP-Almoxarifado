@@ -19,12 +19,11 @@ import tests.descorp.java.DbUnitUtil;
  */
 
  public class DistribuidorTeste{
-    private static EntityManagerFactory emf;
+    private static EntityManagerFactory emf = Persistence.createEntityManagerFactory("dscorp_persistence");
     private EntityManager em;
     private EntityTransaction et;
 
     public static void setUpClass() {
-        emf = Persistence.createEntityManagerFactory("dscorp_persistence");
         DbUnitUtil.insertData();
     }
 
@@ -60,7 +59,7 @@ import tests.descorp.java.DbUnitUtil;
 
     @Test
     public void consultDistribuidor() throws ParseException {
-        Distribuidor distribuidor = em.find(Distribuidor.class, 1);
+        Usuario distribuidor = em.find(Distribuidor.class, 1L);
 
         assertEquals("59.442.943/0001-17", distribuidor.getCnpj());
         assertEquals("Distribuidora Paulista Filial", distribuidor.getName());
@@ -69,6 +68,8 @@ import tests.descorp.java.DbUnitUtil;
     private Distribuidor createDistribuidor() {
         Distribuidor aux = new Distribuidor();
         aux.setName("Distribuidora Estadual - Matriz");
+        aux.setEmail("distribuidora@dist.com");
+        aux.setSenha("DistD123");
         aux.setCnpj("65.139.251/0001-05");
         return aux;
     }

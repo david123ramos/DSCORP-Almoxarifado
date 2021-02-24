@@ -1,0 +1,6 @@
+com\descorp\models\DepartamentoTest.class
+com\descorp\models\ProdutoTest.class
+com\descorp\models\LojistaTest.class
+tests\descorp\java\TestSuite.class
+com\descorp\models\DistribuidorTeste.class
+tests\descorp\java\DbUnitUtil.class

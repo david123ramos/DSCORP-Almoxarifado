@@ -1,8 +1,6 @@
 package com.descorp.models;
 
 import java.text.ParseException;
-import java.util.ArrayList;
-import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
@@ -21,12 +19,12 @@ import tests.descorp.java.DbUnitUtil;
  */
 
  public class LojistaTest{
-    private static EntityManagerFactory emf;
-    private EntityManager em;
+    private static EntityManagerFactory emf = Persistence.createEntityManagerFactory("dscorp_persistence");;
+    private EntityManager em ;
     private EntityTransaction et;
 
     public static void setUpClass() {
-        emf = Persistence.createEntityManagerFactory("dscorp_persistence");
+        
         DbUnitUtil.insertData();
     }
 
@@ -62,22 +60,22 @@ import tests.descorp.java.DbUnitUtil;
 
     @Test
     public void consultLojista() throws ParseException {
-        Lojista lojista = em.find(Lojista.class, 1);
+        Usuario lojista = em.find(Lojista.class, 5L);
 
-        assertEquals("Casas Bahia", lojista.getName());
-        assertEquals("4", lojista.getId());
+        assertEquals("Extra", lojista.getName());
+        assertTrue(1 == lojista.getId());
     }
 
     private Lojista createLojista() {
-        Lojista aux = new Lojista();
-        aux.setName("Extra");
-        Departamento dpto  = new Departamento();
-        dpto.setName("Limpeza");
-        
-        List<Departamento> dptos = new ArrayList<>();
-        dptos.add(dpto);
-        
-        aux.setDepartamentos(dptos);
-        return aux;
+        Lojista s = new Lojista();
+        s.setName("David");
+        s.setCnpj("123123123123");
+        s.setEmail("drs@a.recife.ifpe.edu.br");
+        Departamento d = new Departamento();
+        d.setId(123);
+        d.setName("LP");
+        s.setDepartamentos(d);
+        s.setSenha("PSW123adda");
+        return s;
     }
  }

@@ -2,8 +2,12 @@ package com.descorp.models;
 
 import java.io.Serializable;
 import javax.persistence.Entity;
+import javax.persistence.PrimaryKeyJoinColumn;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "TB_DISTRIBUIDOR")
+@PrimaryKeyJoinColumn(name = "id_usuario", referencedColumnName = "id")
 public class Distribuidor extends Usuario implements Serializable{
    
     @Override

@@ -19,12 +19,11 @@ import tests.descorp.java.DbUnitUtil;
  */
 
  public class DepartamentoTest{
-    private static EntityManagerFactory emf;
+    private static EntityManagerFactory emf = Persistence.createEntityManagerFactory("dscorp_persistence"); 
     private EntityManager em;
     private EntityTransaction et;
 
     public static void setUpClass() {
-        emf = Persistence.createEntityManagerFactory("dscorp_persistence");
         DbUnitUtil.insertData();
     }
 
@@ -62,8 +61,8 @@ import tests.descorp.java.DbUnitUtil;
     public void consultDepartamento() throws ParseException {
         Departamento departamento = em.find(Departamento.class, 1);
 
-        assertEquals("Pecas automotivas", departamento.getName());
-        assertEquals("1", departamento.getId());
+        assertEquals("Usados", departamento.getName());
+        assertTrue(1 == departamento.getId());
     }
 
     private Departamento createDepartamento() {

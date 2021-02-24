@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.List;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -12,6 +13,7 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.PrePersist;
+import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
@@ -20,6 +22,8 @@ import javax.persistence.TemporalType;
  * @author David
  * @author Giovanni
  */
+@Entity
+@Table(name="TB_VENDA") 
 public class Venda {
     
     @Id
@@ -27,18 +31,17 @@ public class Venda {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     
-    @Column (name="ID_DEPARTAMENTO")
+    
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "ID_LOJISTA", referencedColumnName = "id")
     private Lojista lojista;
     
     
     @ManyToMany
-    @Column(name = "produtos_venda")
     @JoinTable(
       name = "venda_produto", 
       joinColumns = @JoinColumn(name = "Venda_id"), 
-      inverseJoinColumns = @JoinColumn(name = "Produto_id")) 
+      inverseJoinColumns = @JoinColumn(name = "id")) 
     private List<Produto> produtos;
     
     @Temporal(TemporalType.TIMESTAMP)

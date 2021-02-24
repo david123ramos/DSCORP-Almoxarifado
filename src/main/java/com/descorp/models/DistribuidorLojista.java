@@ -2,15 +2,16 @@ package com.descorp.models;
 
 import java.io.Serializable;
 import javax.persistence.CascadeType;
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "DISTRIBUIDOR_LOJISTA")
 public class DistribuidorLojista implements Serializable{
 
     @Id 
@@ -19,12 +20,10 @@ public class DistribuidorLojista implements Serializable{
 
     
     @OneToOne(cascade = CascadeType.ALL)
-    @Column (name="ID_DISTRIBUIDOR")
     @JoinColumn(name = "ID_DISTRIBUIDOR", referencedColumnName = "id")
     private Distribuidor distribuidor;
 
     @OneToOne(cascade = CascadeType.ALL)
-    @Column (name="ID_LOJISTA")
     @JoinColumn(name = "ID_LOJISTA", referencedColumnName = "id")
     private Lojista lojista;
 
