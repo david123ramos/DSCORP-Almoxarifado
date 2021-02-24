@@ -80,4 +80,28 @@ import tests.descorp.java.DbUnitUtil;
         aux.setDepartamentos(dptos);
         return aux;
     }
+
+
+
+    String jpql = "select l from Lojista l";
+	TypedQuery<Lojista> typedQuery = entityManager.createQuery(jpql, Lojista.class);
+	List<Lojista> listaLojista = typedQuery.getResultList();
+		
+	for(Lojista lojista: listaLojista) {
+		System.out.println(lojista.getName());
+	}
+		
+
+	String jpql = "select l from Lojista l where id = :idLojista ";
+	int idLojista = 3;
+	
+	TypedQuery<Lojista> typedQuery = entityManager
+		.createQuery(jpql, Lojista.class)
+		.setParameter("id", idLojista);
+	List<Lojista> listaLojista = typedQuery.getResultList();
+		
+	for(Lojista lojista: listaLojista) {
+		System.out.println(lojista.getName());
+	}
+
  }

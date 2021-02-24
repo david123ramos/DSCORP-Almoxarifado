@@ -72,4 +72,27 @@ import tests.descorp.java.DbUnitUtil;
         aux.setCnpj("65.139.251/0001-05");
         return aux;
     }
+
+
+    String jpql = "select d from Distribuidor d";
+	TypedQuery<Distribuidor> typedQuery = entityManager.createQuery(jpql, Distribuidor.class);
+	List<Distribuidor> listaDistribuidor = typedQuery.getResultList();
+		
+	for(Distribuidor distribuidor: listaDistribuidor) {
+		System.out.println(distribuidor.getName());
+	}
+		
+
+	String jpql = "select d from Distribuidor d where id = :idDistribuidor ";
+	int idDistribuidor = 3;
+	
+	TypedQuery<Distribuidor> typedQuery = entityManager
+		.createQuery(jpql, Distribuidor.class)
+		.setParameter("id", id);
+	List<Distribuidor> listaDistribuidor = typedQuery.getResultList();
+		
+	for(Distribuidor distribuidor: listaDistribuidor) {
+		System.out.println(distribuidor.getName());
+	}
+
  }
