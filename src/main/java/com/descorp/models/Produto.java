@@ -1,24 +1,35 @@
 package com.descorp.models;
 
 import java.io.Serializable;
+import java.util.List;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
+import javax.persistence.OneToOne;
 
 @Entity
 public class Produto implements Serializable{
 
-    @Id 
+    @Id
+    @Column (name= "Produto_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     
     @Column (name="NOME")
     private String name;
     
+    @OneToOne(cascade = CascadeType.ALL)
     @Column (name="ID_DEPARTAMENTO")
-    private Integer idDepartamento;
+    @JoinColumn(name = "ID_DEPARTAMENTO", referencedColumnName = "id")
+    private Departamento dpto;
+    
+    @ManyToMany(mappedBy = "produtos_venda")
+    private List<Venda> vendas;
 
 
     public Integer getId() {
@@ -37,15 +48,15 @@ public class Produto implements Serializable{
         this.name = name;
     }
 
-    public Integer getIdDepartamento() {
-        return idDepartamento;
+    public Departamento getDepartamento() {
+        return dpto;
     }
 
-    public void setIdDepartamento(Integer idDepartamento) {
-        this.idDepartamento = idDepartamento;
+    public void setDepartamento(Departamento d) {
+        this.dpto = d;
     }
     
-      @Override
+    @Override
     public int hashCode() {
         int hash = 0;
         hash += (id != null ? id.hashCode() : 0);
@@ -54,14 +65,13 @@ public class Produto implements Serializable{
 
     @Override
     public boolean equals(Object object) {
-//        if (!(object instanceof Usuario)) {
-//            return false;
-//        }
-//
-//        CartaoCredito other = (CartaoCredito) object;
-//
-//        return !((this.id == null && other.id != null) || (this.id != null && !this.id.equals(other.id)));
-        return false;
+        if (!(object instanceof Usuario)) {
+            return false;
+        }
+
+        Produto other = (Produto) object;
+
+        return !((this.id == null && other.id != null) || (this.id != null && !this.id.equals(other.id)));
     }
 
     @Override

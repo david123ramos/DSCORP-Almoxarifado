@@ -1,5 +1,6 @@
 package com.descorp.models;
 
+import java.text.ParseException;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
@@ -7,7 +8,6 @@ import javax.persistence.Persistence;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import tests.descorp.java.DbUnitUtil;
@@ -17,33 +17,29 @@ import tests.descorp.java.DbUnitUtil;
  * @author David
  * @author Giovanni
  */
-public class ProductTest {
 
+ public class DistribuidorTeste{
     private static EntityManagerFactory emf;
     private EntityManager em;
     private EntityTransaction et;
-    
-    public ProductTest() {
-    }
-    
-    @BeforeClass
+
     public static void setUpClass() {
         emf = Persistence.createEntityManagerFactory("dscorp_persistence");
         DbUnitUtil.insertData();
     }
-    
+
     @AfterClass
     public static void tearDownClass() {
         emf.close();
     }
-    
+
     @Before
     public void setUp() {
         em = emf.createEntityManager();
         et = em.getTransaction();
         et.begin();
     }
-    
+
     @After
     public void tearDown() {
         if (!et.getRollbackOnly()) {
@@ -52,35 +48,28 @@ public class ProductTest {
         em.close();
     }
 
-    /**
-     * Test of getId method, of class Product.
-     */
     @Test
-    public void persistProduct() {
-        Product product;
-        product = createProduct();
-        em.persist(product);
-        em.flush();
+    public void persistDistribuidor() {
+        Distribuidor distribuidor;
+        distribuidor = createDistribuidor();
+        em.persist(distribuidor);
+        em.flush(); //força que a persistência realizada vá para o banco neste momento.
 
-        assertNotNull(product.getId());
+        assertNotNull(distribuidor.getId());
     }
 
-    /**
-     * Test of setId method, of class Product.
-     */
     @Test
-    public void consultProduct() {
-        Product product = em.find(Product.class, 1);
-        assertTrue(200.00F == product.getPrice());
-        assertEquals("Gabinete VGA", product.getName().toString());
+    public void consultDistribuidor() throws ParseException {
+        Distribuidor distribuidor = em.find(Distribuidor.class, 1);
+
+        assertEquals("59.442.943/0001-17", distribuidor.getCnpj());
+        assertEquals("Distribuidora Paulista Filial", distribuidor.getName());
     }
 
-    private Product createProduct(){
-        Product aux = new Product();
-        aux.setName("Teclado logitech");
-        aux.setPrice(129.90F);
-
+    private Distribuidor createDistribuidor() {
+        Distribuidor aux = new Distribuidor();
+        aux.setName("Distribuidora Estadual - Matriz");
+        aux.setCnpj("65.139.251/0001-05");
         return aux;
     }
-    
-}
+ }

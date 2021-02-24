@@ -9,7 +9,7 @@ import org.junit.runners.Suite;
  * @author Giovanni 
  */
 @RunWith(Suite.class)
-@Suite.SuiteClasses({com.descorp.models.StaffTest.class})
+@Suite.SuiteClasses({com.descorp.models.LojistaTest.class})
 public class TestSuite {
     
 }

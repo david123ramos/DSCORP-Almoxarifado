@@ -1,11 +1,14 @@
 package com.descorp.models;
 
 import java.io.Serializable;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 
 @Entity
 public class DistribuidorLojista implements Serializable{
@@ -14,11 +17,16 @@ public class DistribuidorLojista implements Serializable{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+    
+    @OneToOne(cascade = CascadeType.ALL)
     @Column (name="ID_DISTRIBUIDOR")
-    private Integer idDistribuidor;
+    @JoinColumn(name = "ID_DISTRIBUIDOR", referencedColumnName = "id")
+    private Distribuidor distribuidor;
 
+    @OneToOne(cascade = CascadeType.ALL)
     @Column (name="ID_LOJISTA")
-    private Integer idLojista;
+    @JoinColumn(name = "ID_LOJISTA", referencedColumnName = "id")
+    private Lojista lojista;
 
     public Integer getId() {
         return id;
@@ -29,21 +37,21 @@ public class DistribuidorLojista implements Serializable{
     }
 
 
-    public Integer getIdDistribuidor() {
-        return idDistribuidor;
+    public Distribuidor getIdDistribuidor() {
+        return distribuidor;
     }
 
-    public void setIdDistribuidor(Integer idDistribuidor) {
-        this.idDistribuidor = idDistribuidor;
+    public void setIdDistribuidor(Distribuidor d) {
+        this.distribuidor = d;
     }
 
     
-    public Integer getIdLojista() {
-        return idLojista;
+    public Lojista getIdLojista() {
+        return lojista;
     }
 
-    public void setIdLojista(Integer idLojista) {
-        this.idLojista = idLojista;
+    public void setIdLojista(Lojista l) {
+        this.lojista = l;
     }
     
     @Override
@@ -55,14 +63,14 @@ public class DistribuidorLojista implements Serializable{
 
     @Override
     public boolean equals(Object object) {
-//        if (!(object instanceof Usuario)) {
-//            return false;
-//        }
-//
-//        CartaoCredito other = (CartaoCredito) object;
-//
-//        return !((this.id == null && other.id != null) || (this.id != null && !this.id.equals(other.id)));
-        return false;
+        if (!(object instanceof Usuario)) {
+            return false;
+        }
+
+        DistribuidorLojista other = (DistribuidorLojista) object;
+
+        return !((this.id == null && other.id != null) || (this.id != null && !this.id.equals(other.id)));
+
     }
 
     @Override

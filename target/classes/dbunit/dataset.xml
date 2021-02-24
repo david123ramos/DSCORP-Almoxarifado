@@ -1,22 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataset>
 
-    <STAFF document="908.559.730-72" name="Giovanni" phone="81999999999" />
-    <STAFF document="496.523.920-22" name="David" phone="81988888888" />
-    <STAFF document="160.927.670-15" name="Heber" phone="81977777777" />
-    <STAFF document="392.389.890-87" name="Gean" phone="8195884999" />
-    <STAFF document="544.738.980-16" name="Arthur" phone="8193441125" />
+    <DISTRIBUIDOR document="82.084.947/0001-92" name="Distribuidora Paulista Matriz"/>
+    <DISTRIBUIDOR document="59.442.943/0001-17" name="Distribuidora Paulista Filial"/>
+    <DISTRIBUIDOR document="41.686.773/0001-50" name="Distribuidora Federal Matriz"/>
+    <DISTRIBUIDOR document="41.686.773/0001-50" name="Distribuidora Federal Filial - Petrolina"/>
+    <DISTRIBUIDOR document="55.534.705/0001-80" name="Distribuidora União Matriz"/>
 
-    <PRODUCT  name="Gabinete VGA" price="200.00" />
-    <PRODUCT  name="Monitor LG QLED" price="1799.90" />
-    <PRODUCT  name="Cadeira de escritório vectra" price="799.50" />
-    <PRODUCT  name="Mesa para computador preta" price="649.90" />
-    <PRODUCT  name="Mouse Multilaser" price="30.00" />
 
-    <LOG date="2021-02-02 12:20:36" amount="3" operation="ENTRADA" prd_id="1" staff_id="1"/>
-    <LOG date="2021-02-02 15:36:36" amount="1" operation="ENTRADA" prd_id="3" staff_id="3"/>
-    <LOG date="2021-02-04 10:50:08" amount="4" operation="SAIDA" prd_id="2" staff_id="4"/>
-    <LOG date="2021-02-02 13:10:13" amount="5" operation="SAIDA" prd_id="4" staff_id="5"/>
-    <LOG date="2021-02-03 08:43:26" amount="2" operation="ENTRADA" prd_id="5" staff_id="2"/>
+    <DEPARTAMENTO  name="Pecas automotivas"/>
+    <DEPARTAMENTO  name="Maquinas pesadas"/>
+    <DEPARTAMENTO  name="Alimentos"/>
+    <DEPARTAMENTO  name="Bebidas"/>
+    <DEPARTAMENTO  name="Roupas"/>
+    <DEPARTAMENTO  name="Sapatos"/>
+    <DEPARTAMENTO  name="Informática"/>
+    <DEPARTAMENTO  name="Móveis/">
+    <DEPARTAMENTO  name="Eletrodomesticos"/>
+
+
+    <DEPARTAMENTO_DISTRIBUIDOR id_distribuidor="1" id_departamento="1"/>
+    <DEPARTAMENTO_DISTRIBUIDOR id_distribuidor="1" id_departamento="2"/>
+    <DEPARTAMENTO_DISTRIBUIDOR id_distribuidor="2" id_departamento="1"/>
+    <DEPARTAMENTO_DISTRIBUIDOR id_distribuidor="3" id_departamento="3"/>
+    <DEPARTAMENTO_DISTRIBUIDOR id_distribuidor="3" id_departamento="4"/>
+    <DEPARTAMENTO_DISTRIBUIDOR id_distribuidor="4" id_departamento="5"/>
+    <DEPARTAMENTO_DISTRIBUIDOR id_distribuidor="4" id_departamento="6"/>
+    <DEPARTAMENTO_DISTRIBUIDOR id_distribuidor="5" id_departamento="7"/>
+    <DEPARTAMENTO_DISTRIBUIDOR id_distribuidor="5" id_departamento="8"/>
+    <DEPARTAMENTO_DISTRIBUIDOR id_distribuidor="5" id_departamento="9"/>
+
+
+    <PRODUTO name="Sensor MAP" id_departamento="1"/>
+    <PRODUTO name="Bomba deoleo" id_departamento="1"/>
+    <PRODUTO name="Trator Agricola" id_departamento="2"/>
+    <PRODUTO name="Retroescavadeira" id_departamento="2"/>
+    <PRODUTO name="Macarrao" id_departamento="3"/>
+    <PRODUTO name="Arroz" id_departamento="3"/>
+    <PRODUTO name="Feijão" id_departamento="3"/>
+    <PRODUTO name="Carne" id_departamento="3"/>
+    <PRODUTO name="Agua" id_departamento="4"/>
+    <PRODUTO name="Cerveja" id_departamento="4"/>
+    <PRODUTO name="Refrigerante" id_departamento="4"/>
+    <PRODUTO name="Camisa" id_departamento="5"/>
+    <PRODUTO name="Vestido" id_departamento="5"/>
+    <PRODUTO name="Short" id_departamento="5"/>
+    <PRODUTO name="Bermuda" id_departamento="5"/>
+    <PRODUTO name="Calca" id_departamento="5"/>
+    <PRODUTO name="Sandalia" id_departamento="6"/>
+    <PRODUTO name="Sapato fechado" id_departamento="6"/>
+    <PRODUTO name="Salto alto" id_departamento="6"/>
+    <PRODUTO name="PC gamer" id_departamento="7"/>
+    <PRODUTO name="PC comum" id_departamento="7"/>
+    <PRODUTO name="Mesa com 4 cadeiras" id_departamento="8"/>
+    <PRODUTO name="Mesa para PC" id_departamento="8"/>
+    <PRODUTO name="Geladeira" id_departamento="10"/>
+    <PRODUTO name="Fogão" id_departamento="10"/>
+    <PRODUTO name="microondas" id_departamento="10"/>
+
+
+    <LOJISTA name="Mercado Autocar">
+    <LOJISTA name="DLP">
+    <LOJISTA name="John Deere">
+    <LOJISTA name="Casas Bahia">
+    <LOJISTA name="Americanas">
+    <LOJISTA name="Insinuante">
+    <LOJISTA name="Info House">
+    <LOJISTA name="Nagem">
+    <LOJISTA name="Renner">
+    <LOJISTA name="Big Bompreço">
+
+
+    <DISTRIBUIDOR_LOJISTA id_distribuidor="1" id_lojista="1"/>
+    <DISTRIBUIDOR_LOJISTA id_distribuidor="3" id_lojista="2"/>
+    <DISTRIBUIDOR_LOJISTA id_distribuidor="1" id_lojista="3"/>
+    <DISTRIBUIDOR_LOJISTA id_distribuidor="5" id_lojista="4"/>
+    <DISTRIBUIDOR_LOJISTA id_distribuidor="1" id_lojista="5"/>
+    <DISTRIBUIDOR_LOJISTA id_distribuidor="4" id_lojista="6"/>
+    <DISTRIBUIDOR_LOJISTA id_distribuidor="5" id_lojista="7"/>
+    <DISTRIBUIDOR_LOJISTA id_distribuidor="5" id_lojista="8"/>
+    <DISTRIBUIDOR_LOJISTA id_distribuidor="5" id_lojista="9"/>
+    <DISTRIBUIDOR_LOJISTA id_distribuidor="5" id_lojista="10"/>
+
+    
+    <DEPARTAMENTO_LOJISTA id_lojista="1" id_departamento="1"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="2" id_departamento="4"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="3" id_departamento="2"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="4" id_departamento="7"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="4" id_departamento="8"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="4" id_departamento="9"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="5" id_departamento="5"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="5" id_departamento="6"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="5" id_departamento="7"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="5" id_departamento="8"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="5" id_departamento="9"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="6" id_departamento="8"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="6" id_departamento="9"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="7" id_departamento="7"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="8" id_departamento="7"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="9" id_departamento="5"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="9" id_departamento="6"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="10" id_departamento="3"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="10" id_departamento="4"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="10" id_departamento="5"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="10" id_departamento="6"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="10" id_departamento="7"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="10" id_departamento="8"/>
+    <DEPARTAMENTO_LOJISTA id_lojista="10" id_departamento="9"/>
 
 </dataset>

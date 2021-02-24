@@ -10,7 +10,8 @@ import javax.persistence.Id;
 @Entity
 public class Departamento implements Serializable{
 
-    @Id 
+    @Id
+    @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
@@ -42,14 +43,14 @@ public class Departamento implements Serializable{
 
     @Override
     public boolean equals(Object object) {
-//        if (!(object instanceof Usuario)) {
-//            return false;
-//        }
-//
-//        CartaoCredito other = (CartaoCredito) object;
-//
-//        return !((this.id == null && other.id != null) || (this.id != null && !this.id.equals(other.id)));
-        return false;
+        if (!(object instanceof Usuario)) {
+            return false;
+        }
+
+        Departamento other = (Departamento) object;
+
+        return !((this.id == null && other.id != null) || (this.id != null && !this.id.equals(other.id)));
+
     }
 
     @Override

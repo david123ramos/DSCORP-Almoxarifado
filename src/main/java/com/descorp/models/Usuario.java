@@ -1,38 +1,31 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.descorp.models;
 
 import java.io.Serializable;
-import java.util.Collection;
 import java.util.Date;
-import java.util.HashSet;
+import java.util.List;
 import javax.persistence.Access;
 import javax.persistence.AccessType;
-import javax.persistence.CollectionTable;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.DiscriminatorColumn;
 import javax.persistence.DiscriminatorType;
-import javax.persistence.ElementCollection;
-import javax.persistence.Embedded;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.PrePersist;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-import javax.validation.Valid;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Past;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 //import org.hibernate.validator.constraints.br.CPF;
@@ -41,86 +34,49 @@ import javax.validation.constraints.Size;
 
 @Entity
 @Table(name = "TB_USUARIO")
-@Inheritance(strategy = InheritanceType.JOINED) //Estratégia de herança.
-@DiscriminatorColumn(name = "DISC_USUARIO", //Nome da coluna que vai discriminar subclasses.
-        discriminatorType = DiscriminatorType.STRING, length = 1)
+@Inheritance(strategy = InheritanceType.JOINED) 
+@DiscriminatorColumn(name = "DISC_USUARIO", discriminatorType = DiscriminatorType.STRING, length = 1)
 @Access(AccessType.FIELD)
 public abstract class Usuario implements Serializable {
     @Id
+    @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     protected Long id;
-    @Valid
-    @Embedded
-    //protected Endereco endereco;
-    @Size(max = 3)
-    @ElementCollection
-    @CollectionTable(name = "TB_TELEFONE",
-            joinColumns = @JoinColumn(name = "ID_USUARIO"))
-    @Column(name = "TXT_NUM_TELEFONE")
-    protected Collection<String> telefones;
+
     @NotNull
-    //@CPF
-    @Column(name = "TXT_CPF")
-    protected String cpf;
-    @NotBlank
-    @Size(max = 20)
-    @Column(name = "TXT_LOGIN")
-    protected String login;
+    @Column(name = "TXT_CNPJ")
+    protected String cnpj;
+
     @NotBlank
     @Size(max = 30)
     @Pattern(regexp = "\\p{Upper}{1}\\p{Lower}+", message = "{exemplo.jpa.Usuario.nome}")
-    @Column(name = "TXT_PRIMEIRO_NOME")
-    protected String primeiroNome;
-    @NotBlank
-    @Size(max = 30)
-    @Pattern(regexp = "\\p{Upper}{1}\\p{Lower}+", message = "{exemplo.jpa.Usuario.nome}") 
-    @Column(name = "TXT_ULTIMO_NOME")
-    protected String ultimoNome;
+    @Column(name = "name")
+    protected String name;
+    
     @NotNull
     @Email
     @Column(name = "TXT_EMAIL", length = 30, nullable = false)
     protected String email;
+
     @NotBlank
     @Size(min = 6, max = 20)
-    @Pattern(regexp = "((?=.*\\p{Digit})(?=.*\\p{Lower})(?=.*\\p{Upper})(?=.*\\p{Punct}).{6,20})", 
-            message = "{exemplo.jpa.Usuario.senha}")
+    @Pattern(regexp = "((?=.*\\p{Digit})(?=.*\\p{Lower})(?=.*\\p{Upper})(?=.*\\p{Punct}).{6,20})",  message = "{exemplo.jpa.Usuario.senha}")
     @Column(name = "TXT_SENHA")
     protected String senha;
-    @Past
-    @Temporal(TemporalType.DATE)
-    @Column(name = "DT_NASCIMENTO")
-    protected Date dataNascimento;
+
+
     @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "DT_CRIACAO")
-    protected Date dataCriacao;    
+    protected Date dataCriacao;
+    
+        
+    @OneToMany(mappedBy = "Usuario", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true, targetEntity = Departamento.class)
+    @JoinColumn(name = "ID_DPTOS", referencedColumnName = "id")
+    private List<Departamento> departamentos;
     
     @PrePersist
     public void setDataCriacao() {
         this.setDataCriacao(new Date());
-    }
-    
-//    public Endereco getEndereco() {;
-//        return endereco;
-//    }
-//
-//    public void setEndereco(Endereco endereco) {
-//        this.endereco = endereco;
-//    }
-//    
-//    public Endereco criarEndereco() {
-//        this.setEndereco(new Endereco());
-//        return getEndereco();
-//    }
-
-    public Collection<String> getTelefones() {
-        return telefones;
-    }
-
-    public void addTelefone(String telefone) {
-        if (telefones == null) {
-            telefones = new HashSet<>();
-        }
-        telefones.add(telefone);
     }
 
     public Long getId() {
@@ -131,21 +87,6 @@ public abstract class Usuario implements Serializable {
         this.id = id;
     }
 
-    public String getCpf() {
-        return cpf;
-    }
-
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
-
-    public String getLogin() {
-        return login;
-    }
-
-    public void setLogin(String login) {
-        this.login = login;
-    }
 
     public String getEmail() {
         return email;
@@ -163,14 +104,6 @@ public abstract class Usuario implements Serializable {
         this.senha = senha;
     }
 
-    public Date getDataNascimento() {
-        return dataNascimento;
-    }
-
-    public void setDataNascimento(Date dataNascimento) {
-        this.dataNascimento = dataNascimento;
-    }
-
     public Date getDataCriacao() {
         return dataCriacao;
     }
@@ -179,21 +112,30 @@ public abstract class Usuario implements Serializable {
         this.dataCriacao = dataCriacao;
     }
 
-    public String getPrimeiroNome() {
-        return primeiroNome;
+    public String getCnpj() {
+        return cnpj;
     }
 
-    public void setPrimeiroNome(String primeiroNome) {
-        this.primeiroNome = primeiroNome;
+    public void setCnpj(String cnpj) {
+        this.cnpj = cnpj;
     }
 
-    public String getUltimoNome() {
-        return ultimoNome;
+    public String getName() {
+        return name;
     }
 
-    public void setUltimoNome(String ultimoNome) {
-        this.ultimoNome = ultimoNome;
+    public void setName(String name) {
+        this.name = name;
     }
+
+    public List<Departamento> getDepartamentos() {
+        return departamentos;
+    }
+
+    public void setDepartamentos(List<Departamento> departamentos) {
+        this.departamentos = departamentos;
+    }
+
 
     @Override
     public int hashCode() {
@@ -217,16 +159,10 @@ public abstract class Usuario implements Serializable {
         StringBuilder sb = new StringBuilder();
         sb.append(this.id);
         sb.append(", ");
-        sb.append(this.primeiroNome);
+        sb.append(this.name);
         sb.append(", ");
-        sb.append(this.login);
         sb.append(", ");
-        sb.append(this.cpf);
-
-        for (String telefone : this.telefones) {
-            sb.append(", ");
-            sb.append(telefone);
-        }
+        sb.append(this.cnpj);
 
         return sb.toString();
     }
