@@ -1,10 +1,12 @@
 package com.descorp.models;
 
 import java.text.ParseException;
+import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
+import javax.persistence.TypedQuery;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -64,6 +66,27 @@ import tests.descorp.java.DbUnitUtil;
 
         assertEquals("Extra", lojista.getName());
         assertTrue(1 == lojista.getId());
+        
+        String jpql = "select l from TB_USUARIO l";
+        TypedQuery<Lojista> typedQuery = em.createQuery(jpql, Lojista.class);
+        List<Lojista> listaLojista = typedQuery.getResultList();
+
+        for(Lojista l: listaLojista) {
+            System.out.println(l.getName());
+        }
+
+
+        String jpql2 = "select l from TB_USUARIO l where id = :idLojista ";
+        int idLojista = 3;
+
+        TypedQuery<Lojista> typedQuery2 = em
+                .createQuery(jpql, Lojista.class)
+                .setParameter("id", idLojista);
+        List<Lojista> listaLojista2 = typedQuery.getResultList();
+
+        for(Lojista l2: listaLojista) {
+                System.out.println(l2.getName());
+        }
     }
 
     private Lojista createLojista() {
@@ -78,28 +101,5 @@ import tests.descorp.java.DbUnitUtil;
         s.setSenha("PSW123adda");
         return s;
     }
-
-
-
-    String jpql = "select l from Lojista l";
-	TypedQuery<Lojista> typedQuery = entityManager.createQuery(jpql, Lojista.class);
-	List<Lojista> listaLojista = typedQuery.getResultList();
-		
-	for(Lojista lojista: listaLojista) {
-		System.out.println(lojista.getName());
-	}
-		
-
-	String jpql = "select l from Lojista l where id = :idLojista ";
-	int idLojista = 3;
-	
-	TypedQuery<Lojista> typedQuery = entityManager
-		.createQuery(jpql, Lojista.class)
-		.setParameter("id", idLojista);
-	List<Lojista> listaLojista = typedQuery.getResultList();
-		
-	for(Lojista lojista: listaLojista) {
-		System.out.println(lojista.getName());
-	}
 
  }
